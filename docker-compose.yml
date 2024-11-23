@@ -1,0 +1,59 @@
+services:
+ 
+  
+
+  back-web:
+    restart: always
+    build:
+      context: ./backend/web
+    networks:
+      - back-network
+
+  db:
+    image: mysql:8.0.39
+    restart: always
+    networks:
+      - back-network
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+      - TZ=America/Santiago
+      - MYSQL_DATABASE=${DATABASE}
+      
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./api/sql/tablas.sql:/docker-entrypoint-initdb.d/01_tablas.sql
+      - ./api/sql/insert.sql:/docker-entrypoint-initdb.d/02_insert.sql
+
+  
+  api1:
+    build:
+      context: ./api
+    restart: always
+    networks:
+      - back-network
+    environment:
+      - DB_HOST=db
+      - DB_USER=${DB_USER}
+      - DB_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+      - DATABASE=${DATABASE}
+      - DOKER=True
+      - SECRET_KEY=${SECRET_KEY}
+      - EMAIL_LOG=${EMAIL_LOG}
+      - EMAIL_MAIL=${EMAIL_MAIL}
+      - EMAIL_TOKEN=${EMAIL_TOKEN}
+      - RUTA_LOG=/app/log
+      - RUTA_TESIS_FILE=/var/tesis
+    depends_on:
+      - db
+    volumes:
+      - file-tesis:/var/tesis
+      - logs-api:/app/log
+ 
+networks:
+  back-network:
+    driver: bridge
+
+volumes:
+  db-data:
+  file-tesis:
+  logs-api:
