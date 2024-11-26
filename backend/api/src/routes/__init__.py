@@ -45,3 +45,21 @@ def Members():
     formatMembers = {k: v.getdict() for k, v in members.items()}
     return jsonify({'members': formatMembers}), 200
 
+@RaizBlueprint.route('/raids', methods=['GET'])
+def Raids():
+    mymembers = memberClans.get_members()
+    headers = {
+            "Authorization": f"Bearer {Config.TokenCoc}"
+        }
+    ruta = Config.URL_COC + '/clans/' + '%23' + Config.ClanId + '/capitalraidseasons'
+    response = requests.get(ruta, headers=headers)
+    if response.status_code != 200:
+        raise Exception(f"Error al Intentar obtener los miembros de la api de Clash of Clans: {response.status_code}")
+    res=response.json()
+    items=res.get('items')[0].get('members')
+    membersRaids = {v['tag']: v for  v in items}
+    memberNotRaids = {k: v.getdict() for k, v in mymembers.items() if k not in membersRaids}
+    namesNotRaids = {k: v['username'] for k, v in memberNotRaids.items()}
+
+    
+    return jsonify({'namesNotRaids': namesNotRaids,'membersNotRaids': memberNotRaids, 'membersRaids': membersRaids}), 200
