@@ -80,15 +80,15 @@ class ModelMember():
     def refreshMembers(cls, deleteMembers: list, insertMembers: list, updateMembers:dict):
         connection = cls.db.create_connection()
         cursor = connection.cursor(dictionary=True)
-
+        position = ','.join(['%s'] * len(deleteMembers))
         try:
             if deleteMembers:
-                sql = """
+                sql = f"""
                 UPDATE players
                 SET status = 'left'
-                WHERE player_id IN (%s)
+                WHERE player_id IN ({position})
                 """
-                cursor.execute(sql, (','.join(map(str, deleteMembers)),))
+                cursor.execute(sql, deleteMembers)
                 connection.commit()
 
             # Insertar nuevos miembros
