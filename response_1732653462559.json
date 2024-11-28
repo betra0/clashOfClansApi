@@ -1,0 +1,2749 @@
+{
+  "items": [
+    {
+      "result": "win",
+      "endTime": "20241126T134245.000Z",
+      "teamSize": 20,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png"
+        },
+        "clanLevel": 9,
+        "attacks": 33,
+        "stars": 57,
+        "destructionPercentage": 98.5,
+        "expEarned": 218
+      },
+      "opponent": {
+        "tag": "#2GJ8VVL2V",
+        "name": "C of C",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png"
+        },
+        "clanLevel": 9,
+        "stars": 34,
+        "destructionPercentage": 65.9
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20241124T082729.000Z",
+      "teamSize": 25,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png"
+        },
+        "clanLevel": 9,
+        "attacks": 36,
+        "stars": 65,
+        "destructionPercentage": 93.8,
+        "expEarned": 232
+      },
+      "opponent": {
+        "tag": "#VC9GUQ00",
+        "name": "الغدير",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/DeK23BNz7BOGbJtqYDMKF8b-XDXVOSQ9pKYbY0bRUZU.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/DeK23BNz7BOGbJtqYDMKF8b-XDXVOSQ9pKYbY0bRUZU.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/DeK23BNz7BOGbJtqYDMKF8b-XDXVOSQ9pKYbY0bRUZU.png"
+        },
+        "clanLevel": 8,
+        "stars": 56,
+        "destructionPercentage": 81.8
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20241015T134209.000Z",
+      "teamSize": 5,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png"
+        },
+        "clanLevel": 9,
+        "attacks": 6,
+        "stars": 13,
+        "destructionPercentage": 99.4,
+        "expEarned": 60
+      },
+      "opponent": {
+        "tag": "#2RQYCPLQG",
+        "name": "«ﷲ»",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/VigGEE4TbA8Xt5JPLAmyuMCn1BoOAgtBZ9TAxlEGBts.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/VigGEE4TbA8Xt5JPLAmyuMCn1BoOAgtBZ9TAxlEGBts.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/VigGEE4TbA8Xt5JPLAmyuMCn1BoOAgtBZ9TAxlEGBts.png"
+        },
+        "clanLevel": 3,
+        "stars": 14,
+        "destructionPercentage": 96.4
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20241013T140327.000Z",
+      "teamSize": 5,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png"
+        },
+        "clanLevel": 9,
+        "attacks": 5,
+        "stars": 14,
+        "destructionPercentage": 97.8,
+        "expEarned": 59
+      },
+      "opponent": {
+        "tag": "#2R8LCPPLJ",
+        "name": "DORA D EXPLORER",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/xofVjeqosge12_F5WhuEaBfmuwiG2rmrpu-vWA9bzXA.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/xofVjeqosge12_F5WhuEaBfmuwiG2rmrpu-vWA9bzXA.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/xofVjeqosge12_F5WhuEaBfmuwiG2rmrpu-vWA9bzXA.png"
+        },
+        "clanLevel": 3,
+        "stars": 15,
+        "destructionPercentage": 100
+      }
+    },
+    {
+      "result": "tie",
+      "endTime": "20230110T122154.000Z",
+      "teamSize": 15,
+      "attacksPerMember": 1,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png"
+        },
+        "clanLevel": 9,
+        "attacks": 7,
+        "stars": 16,
+        "destructionPercentage": 38.4,
+        "expEarned": 0
+      },
+      "opponent": {
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+        },
+        "clanLevel": 0,
+        "stars": 61,
+        "destructionPercentage": 0
+      }
+    },
+    {
+      "result": "tie",
+      "endTime": "20221110T021732.000Z",
+      "teamSize": 15,
+      "attacksPerMember": 1,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png"
+        },
+        "clanLevel": 9,
+        "attacks": 28,
+        "stars": 45,
+        "destructionPercentage": 97.26667,
+        "expEarned": 0
+      },
+      "opponent": {
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+        },
+        "clanLevel": 0,
+        "stars": 147,
+        "destructionPercentage": 0
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20221020T185247.000Z",
+      "teamSize": 20,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png"
+        },
+        "clanLevel": 9,
+        "attacks": 17,
+        "stars": 25,
+        "destructionPercentage": 49.35,
+        "expEarned": 56
+      },
+      "opponent": {
+        "tag": "#2QLRC999L",
+        "name": "الملوك 505",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/FfPeoVm-bN5KPl0ChzF-pToklOR7El52P9zXvDr5ris.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/FfPeoVm-bN5KPl0ChzF-pToklOR7El52P9zXvDr5ris.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/FfPeoVm-bN5KPl0ChzF-pToklOR7El52P9zXvDr5ris.png"
+        },
+        "clanLevel": 3,
+        "stars": 49,
+        "destructionPercentage": 84.6
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20221014T185915.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png"
+        },
+        "clanLevel": 9,
+        "attacks": 20,
+        "stars": 32,
+        "destructionPercentage": 37.966667,
+        "expEarned": 51
+      },
+      "opponent": {
+        "tag": "#2G82CGU8C",
+        "name": "Ho-OH",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/80NRc4Z1WiCxLvotEHjasOA6QCJmP9bpyfKIu6iwl0c.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/80NRc4Z1WiCxLvotEHjasOA6QCJmP9bpyfKIu6iwl0c.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/80NRc4Z1WiCxLvotEHjasOA6QCJmP9bpyfKIu6iwl0c.png"
+        },
+        "clanLevel": 3,
+        "stars": 64,
+        "destructionPercentage": 78.8
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20220921T150207.000Z",
+      "teamSize": 10,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png"
+        },
+        "clanLevel": 9,
+        "attacks": 8,
+        "stars": 14,
+        "destructionPercentage": 52.3,
+        "expEarned": 28
+      },
+      "opponent": {
+        "tag": "#2G90P0YYC",
+        "name": "TANJUNG FC CLAN",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/bqg0o5h5bXoqDHgFvifB7TDcceX8NpKO1-Ld8wkHR9I.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/bqg0o5h5bXoqDHgFvifB7TDcceX8NpKO1-Ld8wkHR9I.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/bqg0o5h5bXoqDHgFvifB7TDcceX8NpKO1-Ld8wkHR9I.png"
+        },
+        "clanLevel": 1,
+        "stars": 30,
+        "destructionPercentage": 100
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20220918T170216.000Z",
+      "teamSize": 10,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png"
+        },
+        "clanLevel": 9,
+        "attacks": 7,
+        "stars": 8,
+        "destructionPercentage": 33,
+        "expEarned": 65
+      },
+      "opponent": {
+        "tag": "#2G8U02RJ2",
+        "name": "taigr",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/oIYdvCR9AlizYjeWVCuX-Y036iVbyK1rAo-9qTlSqdk.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/oIYdvCR9AlizYjeWVCuX-Y036iVbyK1rAo-9qTlSqdk.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/oIYdvCR9AlizYjeWVCuX-Y036iVbyK1rAo-9qTlSqdk.png"
+        },
+        "clanLevel": 1,
+        "stars": 6,
+        "destructionPercentage": 25.6
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20220915T164035.000Z",
+      "teamSize": 10,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png"
+        },
+        "clanLevel": 9,
+        "attacks": 4,
+        "stars": 12,
+        "destructionPercentage": 40,
+        "expEarned": 70
+      },
+      "opponent": {
+        "tag": "#LL29UCJJ",
+        "name": "os matuto",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/-NANCTa0awglFQQDlzVbOFQWxK8iTYCqVd6rXGtjv9o.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/-NANCTa0awglFQQDlzVbOFQWxK8iTYCqVd6rXGtjv9o.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/-NANCTa0awglFQQDlzVbOFQWxK8iTYCqVd6rXGtjv9o.png"
+        },
+        "clanLevel": 4,
+        "stars": 0,
+        "destructionPercentage": 0
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20220912T143157.000Z",
+      "teamSize": 10,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png"
+        },
+        "clanLevel": 9,
+        "attacks": 6,
+        "stars": 4,
+        "destructionPercentage": 22.4,
+        "expEarned": 13
+      },
+      "opponent": {
+        "tag": "#2Q8RP8C2C",
+        "name": "SiNeM",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/zbFq2zFvRNVwKgNqIze8OaWmuZ4XIgs-2cK6D5zESSQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/zbFq2zFvRNVwKgNqIze8OaWmuZ4XIgs-2cK6D5zESSQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/zbFq2zFvRNVwKgNqIze8OaWmuZ4XIgs-2cK6D5zESSQ.png"
+        },
+        "clanLevel": 3,
+        "stars": 27,
+        "destructionPercentage": 89.1
+      }
+    },
+    {
+      "result": "tie",
+      "endTime": "20220910T011710.000Z",
+      "teamSize": 15,
+      "attacksPerMember": 1,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/t7FSg9HqMO-CAvgz9LMmd8iZAM9AKwrG_pfFT0OWzU0.png"
+        },
+        "clanLevel": 9,
+        "attacks": 28,
+        "stars": 45,
+        "destructionPercentage": 104.13333,
+        "expEarned": 0
+      },
+      "opponent": {
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+        },
+        "clanLevel": 0,
+        "stars": 109,
+        "destructionPercentage": 0
+      }
+    },
+    {
+      "result": "tie",
+      "endTime": "20220826T020828.000Z",
+      "teamSize": 10,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/cT9sJEFXgXwuVcGe7ILbldPjrtXou7q8eP1TzR3Bhyc.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/cT9sJEFXgXwuVcGe7ILbldPjrtXou7q8eP1TzR3Bhyc.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/cT9sJEFXgXwuVcGe7ILbldPjrtXou7q8eP1TzR3Bhyc.png"
+        },
+        "clanLevel": 9,
+        "attacks": 3,
+        "stars": 9,
+        "destructionPercentage": 30,
+        "expEarned": 8
+      },
+      "opponent": {
+        "tag": "#2Y28CCJJ9",
+        "name": "A F R I D I",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/odCY_bCsUu3gcG7huAAF3Z13Uh7iKZY7BZSSBaDsjYs.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/odCY_bCsUu3gcG7huAAF3Z13Uh7iKZY7BZSSBaDsjYs.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/odCY_bCsUu3gcG7huAAF3Z13Uh7iKZY7BZSSBaDsjYs.png"
+        },
+        "clanLevel": 5,
+        "stars": 9,
+        "destructionPercentage": 30
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20220125T024451.000Z",
+      "teamSize": 10,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png"
+        },
+        "clanLevel": 9,
+        "attacks": 15,
+        "stars": 22,
+        "destructionPercentage": 89.6,
+        "expEarned": 128
+      },
+      "opponent": {
+        "tag": "#2YQ8UR8JQ",
+        "name": "Booss",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/0NBhXrVHrgCpWwqHV_AMv1_I4ULvngxfqak4mCsGpCo.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/0NBhXrVHrgCpWwqHV_AMv1_I4ULvngxfqak4mCsGpCo.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/0NBhXrVHrgCpWwqHV_AMv1_I4ULvngxfqak4mCsGpCo.png"
+        },
+        "clanLevel": 2,
+        "stars": 16,
+        "destructionPercentage": 53.3
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20220121T221908.000Z",
+      "teamSize": 40,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png"
+        },
+        "clanLevel": 9,
+        "attacks": 22,
+        "stars": 58,
+        "destructionPercentage": 49.35,
+        "expEarned": 76
+      },
+      "opponent": {
+        "tag": "#2LJ92P9UV",
+        "name": "Los asustadosxd",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/pG0P3houP2x4shw5K-tq0prPmueKvG2Gya2S4SW8mLA.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/pG0P3houP2x4shw5K-tq0prPmueKvG2Gya2S4SW8mLA.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/pG0P3houP2x4shw5K-tq0prPmueKvG2Gya2S4SW8mLA.png"
+        },
+        "clanLevel": 4,
+        "stars": 77,
+        "destructionPercentage": 70.575
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20220115T235311.000Z",
+      "teamSize": 20,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png"
+        },
+        "clanLevel": 9,
+        "attacks": 14,
+        "stars": 27,
+        "destructionPercentage": 52.7,
+        "expEarned": 43
+      },
+      "opponent": {
+        "tag": "#2LCGGV98U",
+        "name": "UNKNOWN",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/iL1EdUo9qT5D63GPqF0d4a8VRdVxbOAJtRNddZLfc5Y.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/iL1EdUo9qT5D63GPqF0d4a8VRdVxbOAJtRNddZLfc5Y.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/iL1EdUo9qT5D63GPqF0d4a8VRdVxbOAJtRNddZLfc5Y.png"
+        },
+        "clanLevel": 2,
+        "stars": 56,
+        "destructionPercentage": 93.8
+      }
+    },
+    {
+      "result": "tie",
+      "endTime": "20220110T185619.000Z",
+      "teamSize": 15,
+      "attacksPerMember": 1,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png"
+        },
+        "clanLevel": 9,
+        "attacks": 31,
+        "stars": 69,
+        "destructionPercentage": 137,
+        "expEarned": 0
+      },
+      "opponent": {
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+        },
+        "clanLevel": 0,
+        "stars": 154,
+        "destructionPercentage": 0
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20211231T023247.000Z",
+      "teamSize": 15,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png"
+        },
+        "clanLevel": 9,
+        "attacks": 13,
+        "stars": 21,
+        "destructionPercentage": 52.066666,
+        "expEarned": 39
+      },
+      "opponent": {
+        "tag": "#2L9JRYVCL",
+        "name": "*usluk²*metu",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/fWervXVIi92UOVSbkcHIcOJBRx63pSr-ExM6M-ZqO54.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/fWervXVIi92UOVSbkcHIcOJBRx63pSr-ExM6M-ZqO54.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/fWervXVIi92UOVSbkcHIcOJBRx63pSr-ExM6M-ZqO54.png"
+        },
+        "clanLevel": 4,
+        "stars": 42,
+        "destructionPercentage": 93.666664
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20211228T061855.000Z",
+      "teamSize": 10,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png"
+        },
+        "clanLevel": 9,
+        "attacks": 13,
+        "stars": 29,
+        "destructionPercentage": 97.5,
+        "expEarned": 122
+      },
+      "opponent": {
+        "tag": "#2QYGG9QLY",
+        "name": "神之部落",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/C90oTnJ3s1trqwgkGG1I9e7eUxZkolDpyqqTHDW-Uvo.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/C90oTnJ3s1trqwgkGG1I9e7eUxZkolDpyqqTHDW-Uvo.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/C90oTnJ3s1trqwgkGG1I9e7eUxZkolDpyqqTHDW-Uvo.png"
+        },
+        "clanLevel": 2,
+        "stars": 25,
+        "destructionPercentage": 88.5
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20211222T165736.000Z",
+      "teamSize": 10,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png"
+        },
+        "clanLevel": 9,
+        "attacks": 15,
+        "stars": 30,
+        "destructionPercentage": 100,
+        "expEarned": 116
+      },
+      "opponent": {
+        "tag": "#2LGGYJQLG",
+        "name": "⚡☠️TÜRKMEN☠️⚡",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/cncSgf85ULZMTP2RoXb3tGoRNa4KItSl8ugziOCuTCA.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/cncSgf85ULZMTP2RoXb3tGoRNa4KItSl8ugziOCuTCA.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/cncSgf85ULZMTP2RoXb3tGoRNa4KItSl8ugziOCuTCA.png"
+        },
+        "clanLevel": 3,
+        "stars": 9,
+        "destructionPercentage": 30
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20211215T195040.000Z",
+      "teamSize": 40,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png"
+        },
+        "clanLevel": 9,
+        "attacks": 35,
+        "stars": 84,
+        "destructionPercentage": 73.425,
+        "expEarned": 168
+      },
+      "opponent": {
+        "tag": "#2LLQYUGR2",
+        "name": "los mejores",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/eCwWaQzbqxZA5SubM8DdbYlpAoeBV8v8sRuW1Xknopc.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/eCwWaQzbqxZA5SubM8DdbYlpAoeBV8v8sRuW1Xknopc.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/eCwWaQzbqxZA5SubM8DdbYlpAoeBV8v8sRuW1Xknopc.png"
+        },
+        "clanLevel": 4,
+        "stars": 30,
+        "destructionPercentage": 26.225
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20211213T173216.000Z",
+      "teamSize": 10,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png"
+        },
+        "clanLevel": 9,
+        "attacks": 8,
+        "stars": 7,
+        "destructionPercentage": 31.8,
+        "expEarned": 61
+      },
+      "opponent": {
+        "tag": "#2LJGY2GR2",
+        "name": "konoha_Village",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/tX3MTXlamwFBTrscLglAA92zccLwIybN8HjdhgWRQTI.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/tX3MTXlamwFBTrscLglAA92zccLwIybN8HjdhgWRQTI.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/tX3MTXlamwFBTrscLglAA92zccLwIybN8HjdhgWRQTI.png"
+        },
+        "clanLevel": 2,
+        "stars": 7,
+        "destructionPercentage": 24.7
+      }
+    },
+    {
+      "result": "tie",
+      "endTime": "20211210T032222.000Z",
+      "teamSize": 15,
+      "attacksPerMember": 1,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png"
+        },
+        "clanLevel": 9,
+        "attacks": 29,
+        "stars": 52,
+        "destructionPercentage": 110.933334,
+        "expEarned": 0
+      },
+      "opponent": {
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+        },
+        "clanLevel": 0,
+        "stars": 213,
+        "destructionPercentage": 0
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210717T132610.000Z",
+      "teamSize": 5,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png"
+        },
+        "clanLevel": 9,
+        "attacks": 0,
+        "stars": 0,
+        "destructionPercentage": 0,
+        "expEarned": 0
+      },
+      "opponent": {
+        "tag": "#2L222QQC8",
+        "name": "INDO n req",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/1UeGHkEfIQkqpSAijEmaqAUD8NSc65UBaI461KG7qm8.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/1UeGHkEfIQkqpSAijEmaqAUD8NSc65UBaI461KG7qm8.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/1UeGHkEfIQkqpSAijEmaqAUD8NSc65UBaI461KG7qm8.png"
+        },
+        "clanLevel": 3,
+        "stars": 1,
+        "destructionPercentage": 18.2
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210625T225142.000Z",
+      "teamSize": 15,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png"
+        },
+        "clanLevel": 9,
+        "attacks": 5,
+        "stars": 11,
+        "destructionPercentage": 27.4,
+        "expEarned": 22
+      },
+      "opponent": {
+        "tag": "#299CRRYJP",
+        "name": "hhyycyxjwyh",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/s5bd39sxPBBy_3SA1Q-bcEe9Jtvtt9Jrtq4gK9yorLg.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/s5bd39sxPBBy_3SA1Q-bcEe9Jtvtt9Jrtq4gK9yorLg.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/s5bd39sxPBBy_3SA1Q-bcEe9Jtvtt9Jrtq4gK9yorLg.png"
+        },
+        "clanLevel": 5,
+        "stars": 29,
+        "destructionPercentage": 70.13333
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210619T145647.000Z",
+      "teamSize": 40,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png"
+        },
+        "clanLevel": 9,
+        "attacks": 31,
+        "stars": 43,
+        "destructionPercentage": 40.65,
+        "expEarned": 81
+      },
+      "opponent": {
+        "tag": "#2YL0RG29R",
+        "name": "Warriors PH",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/ELLP7RC8n5QZPSNrwVlMX6YqH4zm7JOphmQ5lO1XVbk.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/ELLP7RC8n5QZPSNrwVlMX6YqH4zm7JOphmQ5lO1XVbk.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/ELLP7RC8n5QZPSNrwVlMX6YqH4zm7JOphmQ5lO1XVbk.png"
+        },
+        "clanLevel": 6,
+        "stars": 109,
+        "destructionPercentage": 95.1
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210617T031241.000Z",
+      "teamSize": 25,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png"
+        },
+        "clanLevel": 9,
+        "attacks": 24,
+        "stars": 49,
+        "destructionPercentage": 69.2,
+        "expEarned": 119
+      },
+      "opponent": {
+        "tag": "#2PPGR8V2U",
+        "name": "Los mercenarios",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/mrHUiCdPTz6xu-aut0_cQHl8VJP-tyNndfLPGYGlnFI.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/mrHUiCdPTz6xu-aut0_cQHl8VJP-tyNndfLPGYGlnFI.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/mrHUiCdPTz6xu-aut0_cQHl8VJP-tyNndfLPGYGlnFI.png"
+        },
+        "clanLevel": 10,
+        "stars": 58,
+        "destructionPercentage": 85.48
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210614T031120.000Z",
+      "teamSize": 25,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png"
+        },
+        "clanLevel": 9,
+        "attacks": 29,
+        "stars": 53,
+        "destructionPercentage": 78.76,
+        "expEarned": 155
+      },
+      "opponent": {
+        "tag": "#2LPUJ28V8",
+        "name": "20娄职",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/15fXSb3nZssXb8RuMjuG-xaSdIgQh1dcdx_IesYhthg.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/15fXSb3nZssXb8RuMjuG-xaSdIgQh1dcdx_IesYhthg.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/15fXSb3nZssXb8RuMjuG-xaSdIgQh1dcdx_IesYhthg.png"
+        },
+        "clanLevel": 4,
+        "stars": 54,
+        "destructionPercentage": 78.84
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210611T211911.000Z",
+      "teamSize": 50,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png"
+        },
+        "clanLevel": 9,
+        "attacks": 52,
+        "stars": 114,
+        "destructionPercentage": 81.08,
+        "expEarned": 318
+      },
+      "opponent": {
+        "tag": "#2YLP8L02C",
+        "name": "BORDO BERELİLER",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/PitCTIQOTzxMT6c14HxILAo-2cOXZGGwUWIqWzoNJxs.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/PitCTIQOTzxMT6c14HxILAo-2cOXZGGwUWIqWzoNJxs.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/PitCTIQOTzxMT6c14HxILAo-2cOXZGGwUWIqWzoNJxs.png"
+        },
+        "clanLevel": 6,
+        "stars": 36,
+        "destructionPercentage": 25.16
+      }
+    },
+    {
+      "result": null,
+      "endTime": "20210609T171651.000Z",
+      "teamSize": 15,
+      "attacksPerMember": 1,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png"
+        },
+        "clanLevel": 9,
+        "attacks": 69,
+        "stars": 138,
+        "destructionPercentage": 319.73334,
+        "expEarned": 0
+      },
+      "opponent": {
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+        },
+        "clanLevel": 0,
+        "stars": 187,
+        "destructionPercentage": 0
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210531T032208.000Z",
+      "teamSize": 20,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png"
+        },
+        "clanLevel": 9,
+        "attacks": 20,
+        "stars": 35,
+        "destructionPercentage": 67.5,
+        "expEarned": 86
+      },
+      "opponent": {
+        "tag": "#VQU0QU9C",
+        "name": "Seng Sangar",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/4sohSWuFFiQqg3QEn6OBw5_YK73rNcOyHGhOsz1L4jA.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/4sohSWuFFiQqg3QEn6OBw5_YK73rNcOyHGhOsz1L4jA.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/4sohSWuFFiQqg3QEn6OBw5_YK73rNcOyHGhOsz1L4jA.png"
+        },
+        "clanLevel": 6,
+        "stars": 55,
+        "destructionPercentage": 92.35
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210527T225033.000Z",
+      "teamSize": 25,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9eAB6S-_ELOeBKP9P9IMV0f-j9patIDv9_YCkv7nHYQ.png"
+        },
+        "clanLevel": 9,
+        "attacks": 24,
+        "stars": 41,
+        "destructionPercentage": 59.28,
+        "expEarned": 83
+      },
+      "opponent": {
+        "tag": "#2LR2VYVU2",
+        "name": "⚔️ملوك العرب⚔️",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/fWervXVIi92UOVSbkcHIcOJBRx63pSr-ExM6M-ZqO54.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/fWervXVIi92UOVSbkcHIcOJBRx63pSr-ExM6M-ZqO54.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/fWervXVIi92UOVSbkcHIcOJBRx63pSr-ExM6M-ZqO54.png"
+        },
+        "clanLevel": 4,
+        "stars": 57,
+        "destructionPercentage": 79.6
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210525T190659.000Z",
+      "teamSize": 25,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png"
+        },
+        "clanLevel": 9,
+        "attacks": 23,
+        "stars": 50,
+        "destructionPercentage": 71.44,
+        "expEarned": 125
+      },
+      "opponent": {
+        "tag": "#220082PV2",
+        "name": "الامراء",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/cYLF_OLR7BLoq7xXWg6en9NlsNrS2D3VfTSNfnE7xTw.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/cYLF_OLR7BLoq7xXWg6en9NlsNrS2D3VfTSNfnE7xTw.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/cYLF_OLR7BLoq7xXWg6en9NlsNrS2D3VfTSNfnE7xTw.png"
+        },
+        "clanLevel": 9,
+        "stars": 69,
+        "destructionPercentage": 95.64
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210523T161234.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png"
+        },
+        "clanLevel": 9,
+        "attacks": 31,
+        "stars": 60,
+        "destructionPercentage": 73.53333,
+        "expEarned": 141
+      },
+      "opponent": {
+        "tag": "#2Y8QRYR2P",
+        "name": "MURGAP",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/bNqs9QXo_BfJCWbwiavDUupXacx1TmXfC_lGbkDLtoA.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/bNqs9QXo_BfJCWbwiavDUupXacx1TmXfC_lGbkDLtoA.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/bNqs9QXo_BfJCWbwiavDUupXacx1TmXfC_lGbkDLtoA.png"
+        },
+        "clanLevel": 8,
+        "stars": 88,
+        "destructionPercentage": 98.86667
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210521T101535.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png"
+        },
+        "clanLevel": 9,
+        "attacks": 33,
+        "stars": 63,
+        "destructionPercentage": 75.4,
+        "expEarned": 164
+      },
+      "opponent": {
+        "tag": "#2PR9VUJLL",
+        "name": "DADDY'S ELITE",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9ENVzla01lnEvOqDVQucHicQWh2rMoRxP9UApMUA3k8.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9ENVzla01lnEvOqDVQucHicQWh2rMoRxP9UApMUA3k8.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9ENVzla01lnEvOqDVQucHicQWh2rMoRxP9UApMUA3k8.png"
+        },
+        "clanLevel": 4,
+        "stars": 76,
+        "destructionPercentage": 88.23333
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210518T030810.000Z",
+      "teamSize": 25,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png"
+        },
+        "clanLevel": 9,
+        "attacks": 26,
+        "stars": 55,
+        "destructionPercentage": 81.24,
+        "expEarned": 219
+      },
+      "opponent": {
+        "tag": "#29RJYP9PR",
+        "name": "BaDbOy OfdHuNaT",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/vOjq08gqPZkPdIpeVlDf6zGLObiYs349OqeHJ1S-Xnk.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/vOjq08gqPZkPdIpeVlDf6zGLObiYs349OqeHJ1S-Xnk.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/vOjq08gqPZkPdIpeVlDf6zGLObiYs349OqeHJ1S-Xnk.png"
+        },
+        "clanLevel": 9,
+        "stars": 49,
+        "destructionPercentage": 75.88
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210515T035753.000Z",
+      "teamSize": 40,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png"
+        },
+        "clanLevel": 9,
+        "attacks": 42,
+        "stars": 69,
+        "destructionPercentage": 68.925,
+        "expEarned": 175
+      },
+      "opponent": {
+        "tag": "#JRL8QRRJ",
+        "name": "Kosmonaftlar",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/vjoWLjuHv9UJTcm0BTzUhkyfyMT0IVZIW0ZHEm_ZNT4.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/vjoWLjuHv9UJTcm0BTzUhkyfyMT0IVZIW0ZHEm_ZNT4.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/vjoWLjuHv9UJTcm0BTzUhkyfyMT0IVZIW0ZHEm_ZNT4.png"
+        },
+        "clanLevel": 14,
+        "stars": 89,
+        "destructionPercentage": 81.1
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210512T230526.000Z",
+      "teamSize": 40,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png"
+        },
+        "clanLevel": 9,
+        "attacks": 38,
+        "stars": 81,
+        "destructionPercentage": 77.55,
+        "expEarned": 287
+      },
+      "opponent": {
+        "tag": "#QPPLCUV0",
+        "name": "flamingo",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/1YBtCvLSc51tvTuJBZos-ml87frIhdFB7J7Dsn26lwc.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/1YBtCvLSc51tvTuJBZos-ml87frIhdFB7J7Dsn26lwc.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/1YBtCvLSc51tvTuJBZos-ml87frIhdFB7J7Dsn26lwc.png"
+        },
+        "clanLevel": 10,
+        "stars": 77,
+        "destructionPercentage": 69.6
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210510T192222.000Z",
+      "teamSize": 15,
+      "attacksPerMember": 1,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/3slk6MSKV8yWZ9HOtREcivQ_0lmuyH65vB8btFK1D4o.png"
+        },
+        "clanLevel": 9,
+        "attacks": 92,
+        "stars": 263,
+        "destructionPercentage": 508.53333,
+        "expEarned": 0
+      },
+      "opponent": {
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+        },
+        "clanLevel": 0,
+        "stars": 93,
+        "destructionPercentage": 0
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210502T045354.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/ku41QahkxWUrFyh31OBSEq7h63Qbj3vm8c4l9pQg3_g.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/ku41QahkxWUrFyh31OBSEq7h63Qbj3vm8c4l9pQg3_g.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/ku41QahkxWUrFyh31OBSEq7h63Qbj3vm8c4l9pQg3_g.png"
+        },
+        "clanLevel": 8,
+        "attacks": 37,
+        "stars": 77,
+        "destructionPercentage": 89.73333,
+        "expEarned": 157
+      },
+      "opponent": {
+        "tag": "#2YL8L8QYP",
+        "name": "TEAM TRINITY",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/hfLQgqeH6lVaSmgnbWM_inLQQcAZc2D7kapNQW-7wwU.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/hfLQgqeH6lVaSmgnbWM_inLQQcAZc2D7kapNQW-7wwU.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/hfLQgqeH6lVaSmgnbWM_inLQQcAZc2D7kapNQW-7wwU.png"
+        },
+        "clanLevel": 6,
+        "stars": 88,
+        "destructionPercentage": 99.833336
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210429T124523.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/ku41QahkxWUrFyh31OBSEq7h63Qbj3vm8c4l9pQg3_g.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/ku41QahkxWUrFyh31OBSEq7h63Qbj3vm8c4l9pQg3_g.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/ku41QahkxWUrFyh31OBSEq7h63Qbj3vm8c4l9pQg3_g.png"
+        },
+        "clanLevel": 8,
+        "attacks": 33,
+        "stars": 56,
+        "destructionPercentage": 73.86667,
+        "expEarned": 222
+      },
+      "opponent": {
+        "tag": "#PY802U90",
+        "name": "Wilanagara",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/4yfmMt4ngp2W76UH6n4idGJaoX928X7OJ5OL8kGbxkk.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/4yfmMt4ngp2W76UH6n4idGJaoX928X7OJ5OL8kGbxkk.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/4yfmMt4ngp2W76UH6n4idGJaoX928X7OJ5OL8kGbxkk.png"
+        },
+        "clanLevel": 12,
+        "stars": 32,
+        "destructionPercentage": 44.7
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210427T044542.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/x6_cdx5a6EISIWhSHByYoNTX1lGOkSKltt9JIgHgjfc.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/x6_cdx5a6EISIWhSHByYoNTX1lGOkSKltt9JIgHgjfc.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/x6_cdx5a6EISIWhSHByYoNTX1lGOkSKltt9JIgHgjfc.png"
+        },
+        "clanLevel": 8,
+        "attacks": 38,
+        "stars": 79,
+        "destructionPercentage": 92.333336,
+        "expEarned": 227
+      },
+      "opponent": {
+        "tag": "#2LL2UPVP8",
+        "name": "COC HERO'S",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/JOnEdb8kMGHdd6Rv2FVNSCSMM3CCxdzXuJw8rZid4ZE.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/JOnEdb8kMGHdd6Rv2FVNSCSMM3CCxdzXuJw8rZid4ZE.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/JOnEdb8kMGHdd6Rv2FVNSCSMM3CCxdzXuJw8rZid4ZE.png"
+        },
+        "clanLevel": 2,
+        "stars": 32,
+        "destructionPercentage": 39.9
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210425T013037.000Z",
+      "teamSize": 40,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png"
+        },
+        "clanLevel": 8,
+        "attacks": 51,
+        "stars": 97,
+        "destructionPercentage": 86.925,
+        "expEarned": 272
+      },
+      "opponent": {
+        "tag": "#2LYU2L8GU",
+        "name": "DOSTLAR",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/959nU6ADUZ9XKSSz276n9lmrWyA5VuYDQqGqbi6olmg.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/959nU6ADUZ9XKSSz276n9lmrWyA5VuYDQqGqbi6olmg.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/959nU6ADUZ9XKSSz276n9lmrWyA5VuYDQqGqbi6olmg.png"
+        },
+        "clanLevel": 4,
+        "stars": 81,
+        "destructionPercentage": 77.15
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210422T202118.000Z",
+      "teamSize": 40,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png"
+        },
+        "clanLevel": 8,
+        "attacks": 56,
+        "stars": 95,
+        "destructionPercentage": 84.725,
+        "expEarned": 243
+      },
+      "opponent": {
+        "tag": "#2YLQLLYCY",
+        "name": "DEATH NOTE",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/t-Bfvzh2AI3-IHpQ0NQAZ9g-GbwuLMaXMRK4uonms9I.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/t-Bfvzh2AI3-IHpQ0NQAZ9g-GbwuLMaXMRK4uonms9I.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/t-Bfvzh2AI3-IHpQ0NQAZ9g-GbwuLMaXMRK4uonms9I.png"
+        },
+        "clanLevel": 4,
+        "stars": 50,
+        "destructionPercentage": 46.975
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210420T163443.000Z",
+      "teamSize": 25,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png"
+        },
+        "clanLevel": 8,
+        "attacks": 34,
+        "stars": 51,
+        "destructionPercentage": 73.68,
+        "expEarned": 183
+      },
+      "opponent": {
+        "tag": "#R8V9LG9Q",
+        "name": "punjabi munde",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/XH-gb9OnNSGV8hBOu5_S_lxNi0K3YeEmvUw1qBzusqg.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/XH-gb9OnNSGV8hBOu5_S_lxNi0K3YeEmvUw1qBzusqg.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/XH-gb9OnNSGV8hBOu5_S_lxNi0K3YeEmvUw1qBzusqg.png"
+        },
+        "clanLevel": 16,
+        "stars": 69,
+        "destructionPercentage": 96.52
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210417T120425.000Z",
+      "teamSize": 25,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png"
+        },
+        "clanLevel": 8,
+        "attacks": 30,
+        "stars": 46,
+        "destructionPercentage": 72.52,
+        "expEarned": 145
+      },
+      "opponent": {
+        "tag": "#2Y2RUQGU0",
+        "name": "Djarum black",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png"
+        },
+        "clanLevel": 7,
+        "stars": 51,
+        "destructionPercentage": 75.8
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210414T041329.000Z",
+      "teamSize": 25,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png"
+        },
+        "clanLevel": 8,
+        "attacks": 26,
+        "stars": 49,
+        "destructionPercentage": 75.92,
+        "expEarned": 136
+      },
+      "opponent": {
+        "tag": "#2L9R9908C",
+        "name": "877-C-N Lite",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/ZgoMARxbYMbed9HWSAlqeCF59nu00qbUIXefY8RpgW0.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/ZgoMARxbYMbed9HWSAlqeCF59nu00qbUIXefY8RpgW0.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/ZgoMARxbYMbed9HWSAlqeCF59nu00qbUIXefY8RpgW0.png"
+        },
+        "clanLevel": 5,
+        "stars": 69,
+        "destructionPercentage": 95.48
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210411T212935.000Z",
+      "teamSize": 20,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png"
+        },
+        "clanLevel": 8,
+        "attacks": 28,
+        "stars": 53,
+        "destructionPercentage": 93.55,
+        "expEarned": 191
+      },
+      "opponent": {
+        "tag": "#2P09GC8RG",
+        "name": "fullon",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9jCcEf5xESk-6lLeZsw9iQ-WmZ3N-8Dbyop0Lk7oVPo.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9jCcEf5xESk-6lLeZsw9iQ-WmZ3N-8Dbyop0Lk7oVPo.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9jCcEf5xESk-6lLeZsw9iQ-WmZ3N-8Dbyop0Lk7oVPo.png"
+        },
+        "clanLevel": 8,
+        "stars": 20,
+        "destructionPercentage": 35.85
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210409T192117.000Z",
+      "teamSize": 15,
+      "attacksPerMember": 1,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png"
+        },
+        "clanLevel": 8,
+        "attacks": 96,
+        "stars": 259,
+        "destructionPercentage": 510.86667,
+        "expEarned": 0
+      },
+      "opponent": {
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+        },
+        "clanLevel": 0,
+        "stars": 112,
+        "destructionPercentage": 0
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210330T162029.000Z",
+      "teamSize": 25,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png"
+        },
+        "clanLevel": 8,
+        "attacks": 29,
+        "stars": 52,
+        "destructionPercentage": 77.12,
+        "expEarned": 139
+      },
+      "opponent": {
+        "tag": "#VGCURLLQ",
+        "name": "#IM-ACTIVE-CLAN",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/nOk8H0tXgzX6AqXIxjCl9vec2LHnizpcyoaZ4g2A-YM.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/nOk8H0tXgzX6AqXIxjCl9vec2LHnizpcyoaZ4g2A-YM.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/nOk8H0tXgzX6AqXIxjCl9vec2LHnizpcyoaZ4g2A-YM.png"
+        },
+        "clanLevel": 8,
+        "stars": 60,
+        "destructionPercentage": 88.84
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210327T174943.000Z",
+      "teamSize": 25,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png"
+        },
+        "clanLevel": 8,
+        "attacks": 31,
+        "stars": 65,
+        "destructionPercentage": 89.64,
+        "expEarned": 194
+      },
+      "opponent": {
+        "tag": "#L09RYYV9",
+        "name": "Knight fury★★★$",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/NH0wyWUfW64JMA-0PPwSkA1ziwlxTloYoLErYyBh2Us.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/NH0wyWUfW64JMA-0PPwSkA1ziwlxTloYoLErYyBh2Us.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/NH0wyWUfW64JMA-0PPwSkA1ziwlxTloYoLErYyBh2Us.png"
+        },
+        "clanLevel": 7,
+        "stars": 41,
+        "destructionPercentage": 64.6
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210324T231628.000Z",
+      "teamSize": 25,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png"
+        },
+        "clanLevel": 8,
+        "attacks": 28,
+        "stars": 69,
+        "destructionPercentage": 97.12,
+        "expEarned": 175
+      },
+      "opponent": {
+        "tag": "#QC0RPVR9",
+        "name": "BD BOYS CLAB",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/kSD88tYsQieSTj_5s2UE0JNf-ZeBiM7212x00EiTevs.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/kSD88tYsQieSTj_5s2UE0JNf-ZeBiM7212x00EiTevs.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/kSD88tYsQieSTj_5s2UE0JNf-ZeBiM7212x00EiTevs.png"
+        },
+        "clanLevel": 10,
+        "stars": 0,
+        "destructionPercentage": 0
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210322T143514.000Z",
+      "teamSize": 20,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png"
+        },
+        "clanLevel": 8,
+        "attacks": 28,
+        "stars": 51,
+        "destructionPercentage": 90.5,
+        "expEarned": 167
+      },
+      "opponent": {
+        "tag": "#2YUL88QJY",
+        "name": "SnD",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/R1X42Eu7-6DY80p4FAxDAorcDk9xrYRpq-qNGhalPeU.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/R1X42Eu7-6DY80p4FAxDAorcDk9xrYRpq-qNGhalPeU.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/R1X42Eu7-6DY80p4FAxDAorcDk9xrYRpq-qNGhalPeU.png"
+        },
+        "clanLevel": 2,
+        "stars": 23,
+        "destructionPercentage": 43.4
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210320T120127.000Z",
+      "teamSize": 25,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png"
+        },
+        "clanLevel": 8,
+        "attacks": 25,
+        "stars": 43,
+        "destructionPercentage": 67.08,
+        "expEarned": 86
+      },
+      "opponent": {
+        "tag": "#VGVG2VL",
+        "name": "DEATH SOLDIER",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/L98wqkOHE2GA54Ja4zIm6lxaBlvJHjcTniZLL47qeu8.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/L98wqkOHE2GA54Ja4zIm6lxaBlvJHjcTniZLL47qeu8.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/L98wqkOHE2GA54Ja4zIm6lxaBlvJHjcTniZLL47qeu8.png"
+        },
+        "clanLevel": 13,
+        "stars": 75,
+        "destructionPercentage": 100
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210317T210003.000Z",
+      "teamSize": 25,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png"
+        },
+        "clanLevel": 8,
+        "attacks": 27,
+        "stars": 51,
+        "destructionPercentage": 76.08,
+        "expEarned": 178
+      },
+      "opponent": {
+        "tag": "#2PVQG92LU",
+        "name": "Los peloteros",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/KsX05FPRAWMsaWXfIsaf5bnxgTm3jv_miA0rSIht5cU.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/KsX05FPRAWMsaWXfIsaf5bnxgTm3jv_miA0rSIht5cU.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/KsX05FPRAWMsaWXfIsaf5bnxgTm3jv_miA0rSIht5cU.png"
+        },
+        "clanLevel": 8,
+        "stars": 37,
+        "destructionPercentage": 61.24
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210315T122514.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png"
+        },
+        "clanLevel": 8,
+        "attacks": 35,
+        "stars": 55,
+        "destructionPercentage": 69.933334,
+        "expEarned": 138
+      },
+      "opponent": {
+        "tag": "#LGL2YVP2",
+        "name": "BrotherHoot",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/3yI8_XeuD5YLQkdBF07gYcd-qzltGpeuEZgm9UL38a4.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/3yI8_XeuD5YLQkdBF07gYcd-qzltGpeuEZgm9UL38a4.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/3yI8_XeuD5YLQkdBF07gYcd-qzltGpeuEZgm9UL38a4.png"
+        },
+        "clanLevel": 9,
+        "stars": 67,
+        "destructionPercentage": 81.3
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210312T173951.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png"
+        },
+        "clanLevel": 8,
+        "attacks": 40,
+        "stars": 78,
+        "destructionPercentage": 90.23333,
+        "expEarned": 154
+      },
+      "opponent": {
+        "tag": "#29UUURCLR",
+        "name": "Kings Palace",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/DzRQyaWSuB77K-IHSSw8z9AUainmedOWKCUYXaW7_m4.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/DzRQyaWSuB77K-IHSSw8z9AUainmedOWKCUYXaW7_m4.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/DzRQyaWSuB77K-IHSSw8z9AUainmedOWKCUYXaW7_m4.png"
+        },
+        "clanLevel": 6,
+        "stars": 83,
+        "destructionPercentage": 96.1
+      }
+    },
+    {
+      "result": null,
+      "endTime": "20210309T225807.000Z",
+      "teamSize": 15,
+      "attacksPerMember": 1,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/yBkusYyJAb81XnyYO5A1yW46mjYMdcDpOaMAQ1qlq7Y.png"
+        },
+        "clanLevel": 8,
+        "attacks": 84,
+        "stars": 244,
+        "destructionPercentage": 475.4,
+        "expEarned": 0
+      },
+      "opponent": {
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+        },
+        "clanLevel": 0,
+        "stars": 135,
+        "destructionPercentage": 0
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210301T202507.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png"
+        },
+        "clanLevel": 7,
+        "attacks": 39,
+        "stars": 77,
+        "destructionPercentage": 92.3,
+        "expEarned": 199
+      },
+      "opponent": {
+        "tag": "#2PUGRL0Y9",
+        "name": "burger",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/a7zChMdM-4IGRR-dB3hLU1Ji24hUHKqF_9mtpzhciiQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/a7zChMdM-4IGRR-dB3hLU1Ji24hUHKqF_9mtpzhciiQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/a7zChMdM-4IGRR-dB3hLU1Ji24hUHKqF_9mtpzhciiQ.png"
+        },
+        "clanLevel": 5,
+        "stars": 64,
+        "destructionPercentage": 79.63333
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210227T043559.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png"
+        },
+        "clanLevel": 7,
+        "attacks": 43,
+        "stars": 85,
+        "destructionPercentage": 97.26667,
+        "expEarned": 203
+      },
+      "opponent": {
+        "tag": "#JJRLVCRL",
+        "name": "Dark boys R A",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/hnGwyQWcwXHNuCgTqZ8rlRHouF4aGb1YmQFG8DL9GTc.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/hnGwyQWcwXHNuCgTqZ8rlRHouF4aGb1YmQFG8DL9GTc.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/hnGwyQWcwXHNuCgTqZ8rlRHouF4aGb1YmQFG8DL9GTc.png"
+        },
+        "clanLevel": 4,
+        "stars": 26,
+        "destructionPercentage": 30.033333
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210224T172734.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png"
+        },
+        "clanLevel": 7,
+        "attacks": 38,
+        "stars": 78,
+        "destructionPercentage": 93.2,
+        "expEarned": 201
+      },
+      "opponent": {
+        "tag": "#2Y8JPYQ89",
+        "name": "Jong V'bazen!",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/WBwu6NMtEQpqvMwAV4xKMSpR404CfWWTPNPDVz0XZ0k.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/WBwu6NMtEQpqvMwAV4xKMSpR404CfWWTPNPDVz0XZ0k.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/WBwu6NMtEQpqvMwAV4xKMSpR404CfWWTPNPDVz0XZ0k.png"
+        },
+        "clanLevel": 6,
+        "stars": 75,
+        "destructionPercentage": 88.36667
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210222T030754.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png"
+        },
+        "clanLevel": 7,
+        "attacks": 45,
+        "stars": 81,
+        "destructionPercentage": 95.96667,
+        "expEarned": 145
+      },
+      "opponent": {
+        "tag": "#JYYY2Q80",
+        "name": "Dangerous Boyz",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/dGHLlrn2dMQRnKlU0EAlJuMXVDi6GRWVl6vHJXwz44E.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/dGHLlrn2dMQRnKlU0EAlJuMXVDi6GRWVl6vHJXwz44E.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/dGHLlrn2dMQRnKlU0EAlJuMXVDi6GRWVl6vHJXwz44E.png"
+        },
+        "clanLevel": 10,
+        "stars": 82,
+        "destructionPercentage": 94.8
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210219T205215.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png"
+        },
+        "clanLevel": 7,
+        "attacks": 46,
+        "stars": 86,
+        "destructionPercentage": 98.5,
+        "expEarned": 202
+      },
+      "opponent": {
+        "tag": "#2YJPLV00G",
+        "name": "Potato People",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/IbFikzclOuMdZtWRfW427B1vVbfVDNvE6qVoLdhFWJY.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/IbFikzclOuMdZtWRfW427B1vVbfVDNvE6qVoLdhFWJY.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/IbFikzclOuMdZtWRfW427B1vVbfVDNvE6qVoLdhFWJY.png"
+        },
+        "clanLevel": 1,
+        "stars": 40,
+        "destructionPercentage": 55.7
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210217T190858.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png"
+        },
+        "clanLevel": 7,
+        "attacks": 41,
+        "stars": 80,
+        "destructionPercentage": 92.5,
+        "expEarned": 189
+      },
+      "opponent": {
+        "tag": "#2YQ2CQVQ0",
+        "name": "FeS2",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/YM9o6BsRdE5jyJCfuOsIj6SsIvrszd70gQQV7JTzl6E.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/YM9o6BsRdE5jyJCfuOsIj6SsIvrszd70gQQV7JTzl6E.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/YM9o6BsRdE5jyJCfuOsIj6SsIvrszd70gQQV7JTzl6E.png"
+        },
+        "clanLevel": 5,
+        "stars": 63,
+        "destructionPercentage": 76.2
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210215T052148.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png"
+        },
+        "clanLevel": 7,
+        "attacks": 45,
+        "stars": 82,
+        "destructionPercentage": 95.2,
+        "expEarned": 195
+      },
+      "opponent": {
+        "tag": "#2L82909Y8",
+        "name": "The infierno NK",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9UN18bxxAdwwO35_k-1J_K7btzO2UAla6asww3xSIu0.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9UN18bxxAdwwO35_k-1J_K7btzO2UAla6asww3xSIu0.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9UN18bxxAdwwO35_k-1J_K7btzO2UAla6asww3xSIu0.png"
+        },
+        "clanLevel": 4,
+        "stars": 32,
+        "destructionPercentage": 44.866665
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210213T005710.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png"
+        },
+        "clanLevel": 7,
+        "attacks": 42,
+        "stars": 79,
+        "destructionPercentage": 91.066666,
+        "expEarned": 191
+      },
+      "opponent": {
+        "tag": "#2YYR2G9RJ",
+        "name": "RG4 LIFE MINI",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/tX3MTXlamwFBTrscLglAA92zccLwIybN8HjdhgWRQTI.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/tX3MTXlamwFBTrscLglAA92zccLwIybN8HjdhgWRQTI.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/tX3MTXlamwFBTrscLglAA92zccLwIybN8HjdhgWRQTI.png"
+        },
+        "clanLevel": 2,
+        "stars": 65,
+        "destructionPercentage": 79.166664
+      }
+    },
+    {
+      "result": null,
+      "endTime": "20210209T203903.000Z",
+      "teamSize": 15,
+      "attacksPerMember": 1,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png"
+        },
+        "clanLevel": 7,
+        "attacks": 83,
+        "stars": 187,
+        "destructionPercentage": 376.6,
+        "expEarned": 0
+      },
+      "opponent": {
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+        },
+        "clanLevel": 0,
+        "stars": 145,
+        "destructionPercentage": 0
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210201T171239.000Z",
+      "teamSize": 15,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png"
+        },
+        "clanLevel": 7,
+        "attacks": 22,
+        "stars": 34,
+        "destructionPercentage": 84.86667,
+        "expEarned": 97
+      },
+      "opponent": {
+        "tag": "#2YQC2QYQ9",
+        "name": "VELA CITY",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/82vHr8RNFBE-h2Zy-jKZ_Rri-tji6bX5wA0fZp96q_8.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/82vHr8RNFBE-h2Zy-jKZ_Rri-tji6bX5wA0fZp96q_8.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/82vHr8RNFBE-h2Zy-jKZ_Rri-tji6bX5wA0fZp96q_8.png"
+        },
+        "clanLevel": 4,
+        "stars": 38,
+        "destructionPercentage": 94.46667
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210130T161501.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png"
+        },
+        "clanLevel": 7,
+        "attacks": 42,
+        "stars": 78,
+        "destructionPercentage": 90.4,
+        "expEarned": 133
+      },
+      "opponent": {
+        "tag": "#2YRQ2GQ90",
+        "name": "GLORY BOYZ",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/7iXuqOe9Zqqr4_0w16LgdCcqyNiltMhFVEP9_GCTVaI.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/7iXuqOe9Zqqr4_0w16LgdCcqyNiltMhFVEP9_GCTVaI.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/7iXuqOe9Zqqr4_0w16LgdCcqyNiltMhFVEP9_GCTVaI.png"
+        },
+        "clanLevel": 2,
+        "stars": 78,
+        "destructionPercentage": 92.96667
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210128T024241.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png"
+        },
+        "clanLevel": 7,
+        "attacks": 40,
+        "stars": 78,
+        "destructionPercentage": 90.3,
+        "expEarned": 183
+      },
+      "opponent": {
+        "tag": "#2989VJQPP",
+        "name": "XRX(SQUAD)",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/83Z0ikOEHf7kRMFq1qMptUEKk4VXZ4arRRR6qwRyzD8.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/83Z0ikOEHf7kRMFq1qMptUEKk4VXZ4arRRR6qwRyzD8.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/83Z0ikOEHf7kRMFq1qMptUEKk4VXZ4arRRR6qwRyzD8.png"
+        },
+        "clanLevel": 5,
+        "stars": 35,
+        "destructionPercentage": 46
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210125T200400.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png"
+        },
+        "clanLevel": 7,
+        "attacks": 44,
+        "stars": 85,
+        "destructionPercentage": 95.86667,
+        "expEarned": 187
+      },
+      "opponent": {
+        "tag": "#2YU80PJQY",
+        "name": "کافه گپ",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/89zrMe8dlfEh-V6Ph-3hRH9E5WMlELo9MjPkYhWkfBg.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/89zrMe8dlfEh-V6Ph-3hRH9E5WMlELo9MjPkYhWkfBg.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/89zrMe8dlfEh-V6Ph-3hRH9E5WMlELo9MjPkYhWkfBg.png"
+        },
+        "clanLevel": 2,
+        "stars": 84,
+        "destructionPercentage": 96.7
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210123T143753.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png"
+        },
+        "clanLevel": 7,
+        "attacks": 45,
+        "stars": 75,
+        "destructionPercentage": 92,
+        "expEarned": 207
+      },
+      "opponent": {
+        "tag": "#2YYRQUYRU",
+        "name": "ROOSTER",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/PbPZBW8Px3ztvyDywY2W2pLXMLk5ocEVOAFJIFol5Z8.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/PbPZBW8Px3ztvyDywY2W2pLXMLk5ocEVOAFJIFol5Z8.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/PbPZBW8Px3ztvyDywY2W2pLXMLk5ocEVOAFJIFol5Z8.png"
+        },
+        "clanLevel": 4,
+        "stars": 59,
+        "destructionPercentage": 69
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210120T205935.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png"
+        },
+        "clanLevel": 7,
+        "attacks": 46,
+        "stars": 85,
+        "destructionPercentage": 96.46667,
+        "expEarned": 146
+      },
+      "opponent": {
+        "tag": "#2QV2JG2Q",
+        "name": "German Outpost",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/oSdF90DRgC4iv-El41atfduhnGzKB_ZhxOKLAitDMtQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/oSdF90DRgC4iv-El41atfduhnGzKB_ZhxOKLAitDMtQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/oSdF90DRgC4iv-El41atfduhnGzKB_ZhxOKLAitDMtQ.png"
+        },
+        "clanLevel": 15,
+        "stars": 90,
+        "destructionPercentage": 100
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210118T174615.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png"
+        },
+        "clanLevel": 7,
+        "attacks": 51,
+        "stars": 90,
+        "destructionPercentage": 100,
+        "expEarned": 192
+      },
+      "opponent": {
+        "tag": "#2P9L8C0Y9",
+        "name": "Italia regna",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/OFoAAFmn-Y7s1UiNX_k6MyfdYSaEqqFYJ-x6hAC2dDs.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/OFoAAFmn-Y7s1UiNX_k6MyfdYSaEqqFYJ-x6hAC2dDs.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/OFoAAFmn-Y7s1UiNX_k6MyfdYSaEqqFYJ-x6hAC2dDs.png"
+        },
+        "clanLevel": 2,
+        "stars": 23,
+        "destructionPercentage": 30.133333
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210116T132826.000Z",
+      "teamSize": 25,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png"
+        },
+        "clanLevel": 7,
+        "attacks": 45,
+        "stars": 72,
+        "destructionPercentage": 97.92,
+        "expEarned": 172
+      },
+      "opponent": {
+        "tag": "#2PRJYPYPQ",
+        "name": "PekkaBon",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/9AGoJYxTzcwUFoIqcBm4xO313DGTpgSSQDvMiBpFtaw.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/9AGoJYxTzcwUFoIqcBm4xO313DGTpgSSQDvMiBpFtaw.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/9AGoJYxTzcwUFoIqcBm4xO313DGTpgSSQDvMiBpFtaw.png"
+        },
+        "clanLevel": 5,
+        "stars": 69,
+        "destructionPercentage": 92.88
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210114T093245.000Z",
+      "teamSize": 25,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/DoLppawh1oLHD59EbCY_fk4idiEfpwku4QH_1ZbkwDE.png"
+        },
+        "clanLevel": 7,
+        "attacks": 31,
+        "stars": 65,
+        "destructionPercentage": 91.64,
+        "expEarned": 110
+      },
+      "opponent": {
+        "tag": "#29VUC2GQY",
+        "name": "NSC*Sigundal™Fc",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/gEHoEf8e4M-xZdofhOpSIhIIv0BhBQE2tgLFXqLPa6A.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/gEHoEf8e4M-xZdofhOpSIhIIv0BhBQE2tgLFXqLPa6A.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/gEHoEf8e4M-xZdofhOpSIhIIv0BhBQE2tgLFXqLPa6A.png"
+        },
+        "clanLevel": 8,
+        "stars": 73,
+        "destructionPercentage": 99.36
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20210112T024229.000Z",
+      "teamSize": 40,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png"
+        },
+        "clanLevel": 7,
+        "attacks": 52,
+        "stars": 106,
+        "destructionPercentage": 91.05,
+        "expEarned": 213
+      },
+      "opponent": {
+        "tag": "#2Y0G0GR2R",
+        "name": "King of lava",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/aMzvH4Duz2FfxUi5_DGfEVZLWXwsmhFQSrMpIK6rygM.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/aMzvH4Duz2FfxUi5_DGfEVZLWXwsmhFQSrMpIK6rygM.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/aMzvH4Duz2FfxUi5_DGfEVZLWXwsmhFQSrMpIK6rygM.png"
+        },
+        "clanLevel": 4,
+        "stars": 70,
+        "destructionPercentage": 64.125
+      }
+    },
+    {
+      "result": null,
+      "endTime": "20210110T015705.000Z",
+      "teamSize": 15,
+      "attacksPerMember": 1,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/rTFseodzEUYkqbNxXO_YqG57bBvyQk0OW5PcqKvPcBQ.png"
+        },
+        "clanLevel": 7,
+        "attacks": 79,
+        "stars": 216,
+        "destructionPercentage": 419,
+        "expEarned": 0
+      },
+      "opponent": {
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+        },
+        "clanLevel": 0,
+        "stars": 154,
+        "destructionPercentage": 0
+      }
+    },
+    {
+      "result": "lose",
+      "endTime": "20210102T004124.000Z",
+      "teamSize": 30,
+      "attacksPerMember": 2,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/7snpZKymJvaN0dXoHzOpw_p4lYVJt30LRhlmuKKNbjM.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/7snpZKymJvaN0dXoHzOpw_p4lYVJt30LRhlmuKKNbjM.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/7snpZKymJvaN0dXoHzOpw_p4lYVJt30LRhlmuKKNbjM.png"
+        },
+        "clanLevel": 7,
+        "attacks": 27,
+        "stars": 36,
+        "destructionPercentage": 54.8,
+        "expEarned": 79
+      },
+      "opponent": {
+        "tag": "#Y2809890",
+        "name": "BADAR WARS",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/L104edNejfmCoRx3XrJpGtY98gdwgBO13SiJ5nChzzE.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/L104edNejfmCoRx3XrJpGtY98gdwgBO13SiJ5nChzzE.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/L104edNejfmCoRx3XrJpGtY98gdwgBO13SiJ5nChzzE.png"
+        },
+        "clanLevel": 9,
+        "stars": 86,
+        "destructionPercentage": 98.46667
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20201210T123157.000Z",
+      "teamSize": 15,
+      "attacksPerMember": 1,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/xRW1oQsDdc_crhAxGdSW3zg8fCfLmwonpuIUBPF9tXc.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/xRW1oQsDdc_crhAxGdSW3zg8fCfLmwonpuIUBPF9tXc.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/xRW1oQsDdc_crhAxGdSW3zg8fCfLmwonpuIUBPF9tXc.png"
+        },
+        "clanLevel": 6,
+        "attacks": 92,
+        "stars": 243,
+        "destructionPercentage": 460.6,
+        "expEarned": 0
+      },
+      "opponent": {
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+        },
+        "clanLevel": 0,
+        "stars": 107,
+        "destructionPercentage": 0
+      }
+    },
+    {
+      "result": "tie",
+      "endTime": "20201009T230405.000Z",
+      "teamSize": 15,
+      "attacksPerMember": 1,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/xRW1oQsDdc_crhAxGdSW3zg8fCfLmwonpuIUBPF9tXc.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/xRW1oQsDdc_crhAxGdSW3zg8fCfLmwonpuIUBPF9tXc.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/xRW1oQsDdc_crhAxGdSW3zg8fCfLmwonpuIUBPF9tXc.png"
+        },
+        "clanLevel": 6,
+        "attacks": 35,
+        "stars": 73,
+        "destructionPercentage": 165.26666,
+        "expEarned": 0
+      },
+      "opponent": {
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+        },
+        "clanLevel": 0,
+        "stars": 212,
+        "destructionPercentage": 0
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20200910T102042.000Z",
+      "teamSize": 15,
+      "attacksPerMember": 1,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/gEsehsswwyDXPdPs68jt2s2JrV-zCOJ_ooRlPS5bxbE.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/gEsehsswwyDXPdPs68jt2s2JrV-zCOJ_ooRlPS5bxbE.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/gEsehsswwyDXPdPs68jt2s2JrV-zCOJ_ooRlPS5bxbE.png"
+        },
+        "clanLevel": 5,
+        "attacks": 84,
+        "stars": 245,
+        "destructionPercentage": 450.06668,
+        "expEarned": 0
+      },
+      "opponent": {
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+        },
+        "clanLevel": 0,
+        "stars": 72,
+        "destructionPercentage": 0
+      }
+    },
+    {
+      "result": "win",
+      "endTime": "20200810T031215.000Z",
+      "teamSize": 15,
+      "attacksPerMember": 1,
+      "battleModifier": "none",
+      "clan": {
+        "tag": "#2920YCJV2",
+        "name": "Tomate Team",
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/gEsehsswwyDXPdPs68jt2s2JrV-zCOJ_ooRlPS5bxbE.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/gEsehsswwyDXPdPs68jt2s2JrV-zCOJ_ooRlPS5bxbE.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/gEsehsswwyDXPdPs68jt2s2JrV-zCOJ_ooRlPS5bxbE.png"
+        },
+        "clanLevel": 5,
+        "attacks": 102,
+        "stars": 350,
+        "destructionPercentage": 643.2,
+        "expEarned": 0
+      },
+      "opponent": {
+        "badgeUrls": {
+          "small": "https://api-assets.clashofclans.com/badges/70/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "large": "https://api-assets.clashofclans.com/badges/512/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png",
+          "medium": "https://api-assets.clashofclans.com/badges/200/H39b_-WLZGtZVWQ0hqTkE-Tn2AaQnQWy_Iz4yBlvL0M.png"
+        },
+        "clanLevel": 0,
+        "stars": 59,
+        "destructionPercentage": 0
+      }
+    }
+  ],
+  "paging": {
+    "cursors": {}
+  }
+}

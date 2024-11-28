@@ -1,9 +1,15 @@
 from models.entities.member import Member
+from models.entities.raid import Raid
 class Members:  
     """ un grupo de miembros del clan con la clase member """
     def __init__(self):
         self.members = set()
-
+        self.raids = set()
+    def add_raid(self, raid):
+        if isinstance(raid, Raid):
+            self.raids.add(raid)
+        else:
+            raise ValueError("Only Raid instances can be added.")
     def add_member(self, member):
         if isinstance(member, Member):
             self.members.add(member)
@@ -24,9 +30,28 @@ class Members:
     def getIdsList(self):
         return [member.id for member in self.members]
     
-    def getdict(self):
-        return {member.id: member.getdict() for member in self.members}
+    def getdict(self, notNull=False):
+        return {member.id: member.getdict(notNull) for member in self.members}
     def getIdNames(self):
         return {member.id: member.username for member in self.members}
+    def getInfoRaid(self):       
+        data=[] 
+        for raid in self.raids:
+            
+            membersNotRaid = self.members - raid.members 
+            raidData = {
+                "startTime": raid.startTime,
+                "endTime": raid.endTime,
+                "totalLoot": raid.totalLoot,
+                "raidsCompleted": raid.raidsCompleted,
+                "totalAttacks": raid.totalAttacks,
+                "enemyDestroyed": raid.enemyDestroyed,
+                "membersRaid": raid.getMembersdict(notNull=True),
+                "membersNotRaid": {member.id: member.username for member in membersNotRaid},
+                
+            }
+            data.append(raidData)
+        return data
+    
 
 

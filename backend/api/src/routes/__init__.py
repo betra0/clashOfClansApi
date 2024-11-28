@@ -4,7 +4,8 @@ from .test import testRoute
 from .auth import authRoutes
 from config import Config
 from models.entities.members import Members
-from models.entities.member import Member
+from models.entities.member import Member, RaidMember
+from models.entities.raid import Raid
 
 
 from services.ClanManager import memberClans
@@ -43,7 +44,7 @@ def Clan():
 def MembersEndpoint():
     members = memberClans.get_members()
 
-    return jsonify({'members': members.getdict()}), 200
+    return jsonify({'members': members.getdict(notNull=True)}), 200
 
 @RaizBlueprint.route('/raids', methods=['GET'])
 def Raids():
@@ -56,13 +57,32 @@ def Raids():
     if response.status_code != 200:
         raise Exception(f"Error al Intentar obtener los miembros de la api de Clash of Clans: {response.status_code}")
     res=response.json()
-    items=res.get('items')[0].get('members')
-    membersRaids = Members()
-    for NewM in items:
-        membersRaids.add_member(Member(id=NewM.get('tag'), username=NewM.get('name')))  
-    memberNotRaids = Members()
-    memberNotRaids.members= mymembers.members - membersRaids.members
+    items=res.get('items')[0]
+    
+
+    myRaid= Raid(startTime=items.get('startTime'), 
+                 endTime=items.get('endTime'), 
+                 totalLoot=items.get('capitalTotalLoot'), 
+                 raidsCompleted=items.get('raidsCompleted'), 
+                 totalAttacks=items.get('totalAttacks'), 
+                 enemyDestroyed=items.get('enemyDistrictsDestroyed'))
+    
+    
+    myRaid.members={RaidMember(id=NewM.get('tag'), 
+                   username=NewM.get('name'), 
+                   attacks=NewM.get('attacks'), 
+                   resourcesLooted=NewM.get('capitalResourcesLooted'), 
+                   attackLimit=NewM.get('attackLimit')+NewM.get('bonusAttackLimit')
+            ) for NewM in items.get('members')}
+        
+    
+    mymembers.add_raid(myRaid)
+    
+    
+    
+    #memberNotRaids = Members()
+    #memberNotRaids.members= mymembers.members - membersRaids.members
 
 
     
-    return jsonify({'membersNotRaids': memberNotRaids.getdict(), 'membersRaids': membersRaids.getdict()}), 200
+    return jsonify({'raids': mymembers.getInfoRaid()}), 200

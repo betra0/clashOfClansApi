@@ -21,7 +21,7 @@ class MemberManager:
             elapsed_time = now - self.last_called
 
         dbMembers = ModelMember.getAllMembers()
-        print('\n\n\n', 'dbMembers:', '\n\n\n', dbMembers, '\n\n\n')
+        print('\n\n\n', 'dbMembersactual:', '\n\n\n', dbMembers.getdict(), '\n\n\n')
         if elapsed_time is not None and elapsed_time < 15:
             return  dbMembers
         
@@ -56,8 +56,9 @@ class MemberManager:
         deleteMembers.members = dbMembers.members - apiMembersObject.members
         
 
-        print('\n\n\n', 'newMembers:', '\n\n\n', newMembers, '\n\n\n')
-        print('\n\n\n', 'deleteMembers:', '\n\n\n', deleteMembers, '\n\n\n')
+        print('\n\n\n', 'newMembers:', '\n\n\n', newMembers.getdict(), '\n\n\n')
+        print('\n\n\n', 'deleteMembers:', '\n\n\n', deleteMembers.getdict(), '\n\n\n')
+        print('\n\n\n', 'actuales a Actualizar:', '\n\n\n', apiMembersObject.getdict(), '\n\n\n')
 
         try:
             ModelMember.refreshMembers(deleteMembers, newMembers, apiMembersObject)

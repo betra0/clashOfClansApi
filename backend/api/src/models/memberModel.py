@@ -42,6 +42,7 @@ class ModelMember():
             """
             cursor.execute(sql)
             rows = cursor.fetchall()
+            
 
             # Crear una lista de instancias de `Member`
             members = Members()
