@@ -1,8 +1,8 @@
 
 from database.db import MySQLConnectionManager
 from utils.logger import Logger
-from models.entities.user import User
-from models.entities.member import Member
+from models.entities.member import Member 
+from models.entities.members import Members
 
 class ModelMember():
 
@@ -44,8 +44,10 @@ class ModelMember():
             rows = cursor.fetchall()
 
             # Crear una lista de instancias de `Member`
-            members = {
-                row['id']: Member(
+            members = Members()
+            for row in rows:
+                members.add_member(
+                    Member(
                     id=row['id'],
                     username=row['username'],
                     clan_tag=row['clan_tag'],
@@ -66,8 +68,9 @@ class ModelMember():
                     notes=row['notes'],
                     created_at=row['created_at'],
                     updated_at=row['updated_at']
-                ) for row in rows
-            }
+                    )
+                )
+                
             return members
 
         except Exception as ex:
@@ -77,7 +80,7 @@ class ModelMember():
             cls.db.close_connection(connection)
 
     @classmethod
-    def refreshMembers(cls, deleteMembers: list, insertMembers: list, updateMembers:dict):
+    def refreshMembers(cls, deleteMembers:Members, insertMembers:Members, updateMembers:Members):
         connection = cls.db.create_connection()
         cursor = connection.cursor(dictionary=True)
         position = ','.join(['%s'] * len(deleteMembers))
@@ -88,7 +91,7 @@ class ModelMember():
                 SET status = 'left'
                 WHERE player_id IN ({position})
                 """
-                cursor.execute(sql, deleteMembers)
+                cursor.execute(sql, deleteMembers.getIdsList())
                 connection.commit()
 
             # Insertar nuevos miembros
@@ -139,7 +142,7 @@ class ModelMember():
                 connection.commit()
             # Actualizar miembros existentes
             if updateMembers and updateMembers != {}:    
-                for member_id, member_data in updateMembers.items():
+                for member in updateMembers:
                     sql = """
                     UPDATE players
                     SET 
@@ -161,20 +164,20 @@ class ModelMember():
                     WHERE player_id = %s
                     """
                     cursor.execute(sql, (
-                        member_data.role,
-                        member_data.townhall_level,
-                        member_data.trophies,
-                        member_data.best_trophies,
-                        member_data.ranking,
-                        member_data.donations,
-                        member_data.troops_requested,
-                        member_data.war_stars,
-                        member_data.experience_level,
-                        member_data.league,
-                        member_data.attack_count,
-                        member_data.defense_count,
-                        member_data.status,
-                        member_id
+                        member.role,
+                        member.townhall_level,
+                        member.trophies,
+                        member.best_trophies,
+                        member.ranking,
+                        member.donations,
+                        member.troops_requested,
+                        member.war_stars,
+                        member.experience_level,
+                        member.league,
+                        member.attack_count,
+                        member.defense_count,
+                        member.status,
+                        member.id
                     ))
                 connection.commit()
 
@@ -189,30 +192,6 @@ class ModelMember():
             
 
             
-
-    @classmethod
-    def createUser(cls, user):
-        conexion = cls.db.create_connection()
-        cursor = conexion.cursor()
-        try:
-            sql = """INSERT INTO users 
-            (id, email, full_name, first_name, last_name, profile_picture, is_admin, google_refresh_token) 
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"""
-            cursor.execute(sql, (user.id, user.email, 
-                                 user.full_name, user.first_name, user.last_name, user.profile_picture,
-                                 user.is_admin, user.google_refresh_token))
-
-            conexion.commit()
-            return True
-
-        except Exception as e:
-            conexion.rollback()
-            Logger.add_to_log('error', e)
-            raise
-    
-
-        finally:
-            cls.db.close_connection(conexion)
 
 
 

@@ -3,11 +3,11 @@ import requests
 from .test import testRoute
 from .auth import authRoutes
 from config import Config
-from models.memberModel import ModelMember
-import time
-from datetime import datetime
+from models.entities.members import Members
 from models.entities.member import Member
-from services.members import memberClans
+
+
+from services.ClanManager import memberClans
 # Crear un blueprint  y registrar las rutas
 RaizBlueprint = Blueprint('Raiz', __name__)
 
@@ -40,10 +40,10 @@ def Clan():
 
 
 @RaizBlueprint.route('/members', methods=['GET'])
-def Members():
+def MembersEndpoint():
     members = memberClans.get_members()
-    formatMembers = {k: v.getdict() for k, v in members.items()}
-    return jsonify({'members': formatMembers}), 200
+
+    return jsonify({'members': members.getdict()}), 200
 
 @RaizBlueprint.route('/raids', methods=['GET'])
 def Raids():
@@ -57,9 +57,12 @@ def Raids():
         raise Exception(f"Error al Intentar obtener los miembros de la api de Clash of Clans: {response.status_code}")
     res=response.json()
     items=res.get('items')[0].get('members')
-    membersRaids = {v['tag']: v for  v in items}
-    memberNotRaids = {k: v.getdict() for k, v in mymembers.items() if k not in membersRaids}
-    namesNotRaids = {k: v['username'] for k, v in memberNotRaids.items()}
+    membersRaids = Members()
+    for NewM in items:
+        membersRaids.add_member(Member(id=NewM.get('tag'), username=NewM.get('name')))  
+    memberNotRaids = Members()
+    memberNotRaids.members= mymembers.members - membersRaids.members
+
 
     
-    return jsonify({'namesNotRaids': namesNotRaids,'membersNotRaids': memberNotRaids, 'membersRaids': membersRaids}), 200
+    return jsonify({'membersNotRaids': memberNotRaids.getdict(), 'membersRaids': membersRaids.getdict()}), 200

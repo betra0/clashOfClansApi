@@ -50,6 +50,14 @@ class Member:
         self.created_at = created_at or datetime.now()
         self.updated_at = updated_at or datetime.now()
     
+    def __eq__(self, other):
+        return isinstance(other, Member) and self.id == other.id
+
+    def __hash__(self):
+        return hash(self.id)
+
+    def __repr__(self):
+        return f"Member(id={self.id}, username='{self.username}')"
     def getdict(self):
         return {
             'id': self.id,
