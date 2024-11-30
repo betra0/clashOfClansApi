@@ -97,9 +97,12 @@ class ModelMember():
 
             # Insertar nuevos miembros
             if insertMembers:
+                
+               
+
                 for newMember in insertMembers:
                     sql = """
-                    INSERT INTO players (
+                   INSERT INTO players (
                         player_id,
                         username,
                         clan_tag,
@@ -116,9 +119,24 @@ class ModelMember():
                         attack_count,
                         defense_count,
                         status
-
                     )
                     VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                    ON DUPLICATE KEY UPDATE
+                        username = VALUES(username),
+                        clan_tag = VALUES(clan_tag),
+                        role = VALUES(role),
+                        townhall_level = VALUES(townhall_level),
+                        trophies = VALUES(trophies),
+                        best_trophies = VALUES(best_trophies),
+                        ranking = VALUES(ranking),
+                        donations = VALUES(donations),
+                        troops_requested = VALUES(troops_requested),
+                        war_stars = VALUES(war_stars),
+                        experience_level = VALUES(experience_level),
+                        league = VALUES(league),
+                        attack_count = VALUES(attack_count),
+                        defense_count = VALUES(defense_count),
+                        status = VALUES(status);
                     """
                     cursor.execute(sql, (
                         newMember.id, 
