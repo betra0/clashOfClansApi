@@ -120,3 +120,40 @@ class RaidMember(Member):
         return data
     
 
+class WarMember(Member):
+    def __init__(self, 
+                 id=None, 
+                 username=None, 
+                 attacks=None, 
+                 attackLimit=2,
+                 mapPosition=None,
+
+
+                 **kwargs):
+        # Pasar el ID al constructor de la clase padre
+        super().__init__(id=id, username=username,  **kwargs)
+
+        
+        self.attacks = attacks if type(attacks) is set else set()
+        if len(self.attacks) > attackLimit:
+            raise ValueError(f"El número de ataques debe ser menor a {attackLimit}")
+
+    
+    def getdict(self, notNull=False):
+        data = {
+            'id': self.id,
+            'username': self.username,
+            'attacks': [attack.getdict() for attack in self.attacks],
+            'attackLimit': self.attackLimit,
+        }
+
+        if len(self.attacks) < self.attackLimit:
+            data['attacks'].extend([None] * (self.attackLimit - len(self.attacks)))
+
+        if notNull:
+            data = {key: value for key, value in data.items() if value is not None}
+
+        return data
+
+    
+

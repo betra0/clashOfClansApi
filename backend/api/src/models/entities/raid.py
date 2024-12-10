@@ -74,5 +74,13 @@ class Raid:
     def getIdNames(self):
         return {member.id: member.username for member in self.members}
 
+    def isMemberInRaid(self, member)->bool:
+        salida = False
+        if member in self.members:
+            salida = True
+        if not salida:
+            if member.created_at <= self.startTime:
+                salida = True
+        return salida
    
 

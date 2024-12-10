@@ -27,3 +27,35 @@ CREATE TABLE players (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, -- Última actualización
     PRIMARY KEY (player_id)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;     
+
+
+CREATE TABLE war (
+    startTime TIMESTAMP PRIMARY KEY,
+    preparationStartTime TIMESTAMP NOT NULL,
+    endTime TIMESTAMP NOT NULL,
+    state VARCHAR(50) NOT NULL,
+    teamSize INT NOT NULL,
+    teamStars INT DEFAULT NULL,
+    enemyStars INT DEFAULT NULL,
+    attacksPerMember INT NOT NULL,
+    enemyClanName VARCHAR(50) DEFAULT NULL,
+    enemyClanTag VARCHAR(15) DEFAULT NULL,
+    teamAttacks INT DEFAULT NULL,
+    enemyAttacks INT DEFAULT NULL,
+    teamDestructionPercentage INT DEFAULT NULL,
+    enemyDestructionPercentage INT DEFAULT NULL,
+    battleModifier VARCHAR(50) DEFAULT NULL
+);
+
+CREATE TABLE warAttacks (
+    warStartTime TIMESTAMP NOT NULL, -- Referencia a la guerra
+    player_id VARCHAR(15) NOT NULL, -- Referencia al jugador
+    attackOrder INT NOT NULL, -- Orden del ataque dentro de la guerra
+    defenderTag VARCHAR(15) NOT NULL, -- Identificador del objetivo atacado
+    stars INT NOT NULL, -- Estrellas ganadas en el ataque
+    destructionPercentage INT NOT NULL, -- Porcentaje de destrucción
+    duration INT NOT NULL, -- Duración del ataque en segundos
+    PRIMARY KEY (warStartTime, player_id, attackOrder),
+    FOREIGN KEY (warStartTime) REFERENCES war(startTime) ON DELETE CASCADE,
+    FOREIGN KEY (player_id) REFERENCES players(player_id) ON DELETE CASCADE
+);
