@@ -47,6 +47,14 @@ CREATE TABLE war (
     battleModifier VARCHAR(50) DEFAULT NULL
 );
 
+CREATE TABLE warMembers (
+    warStartTime TIMESTAMP NOT NULL, -- Referencia a la guerra
+    player_id VARCHAR(15) NOT NULL, -- Referencia al jugador
+    PRIMARY KEY (warStartTime, player_id),
+    FOREIGN KEY (warStartTime) REFERENCES war(startTime) ON DELETE CASCADE,
+    FOREIGN KEY (player_id) REFERENCES players(player_id) ON DELETE CASCADE
+);
+
 CREATE TABLE warAttacks (
     warStartTime TIMESTAMP NOT NULL, -- Referencia a la guerra
     player_id VARCHAR(15) NOT NULL, -- Referencia al jugador
@@ -56,6 +64,5 @@ CREATE TABLE warAttacks (
     destructionPercentage INT NOT NULL, -- Porcentaje de destrucción
     duration INT NOT NULL, -- Duración del ataque en segundos
     PRIMARY KEY (warStartTime, player_id, attackOrder),
-    FOREIGN KEY (warStartTime) REFERENCES war(startTime) ON DELETE CASCADE,
-    FOREIGN KEY (player_id) REFERENCES players(player_id) ON DELETE CASCADE
+    FOREIGN KEY (warStartTime, player_id) REFERENCES warMembers(warStartTime, player_id) ON DELETE CASCADE
 );

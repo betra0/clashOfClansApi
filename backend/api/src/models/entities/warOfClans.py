@@ -6,6 +6,7 @@ from models.entities.member import Member
 class Status(Enum):
     INWAR = 'inWar'
     WARENED='warEnded'
+    PRE='preparation'
 
 class WarOfClans:
     """ un grupo con info sobre un Una guerra de clanes"""
@@ -15,7 +16,7 @@ class WarOfClans:
              endTime=None,
              state=Status.INWAR.value,
              preparationStartTime=None,
-             attacksPerMember=None,
+             attacksPerMember=2,
              battleModifier=None,
              teamStars=0,
              enemyStars=0,

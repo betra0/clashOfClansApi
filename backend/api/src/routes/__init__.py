@@ -9,6 +9,10 @@ from .auth import authRoutes
 from config import Config
 from models.entities.members import Members
 from models.entities.raid import Raid
+from models.warClansModels import ModelWarOfClans
+from models.entities.warOfClans import WarOfClans
+from models.entities.member import WarMember, Member
+
 
 
 
@@ -64,8 +68,18 @@ def Raids():
 
 @RaizBlueprint.route('/test34', methods=['GET'])
 def test34():
-    memberClans.refreshWarOfClans()
+    r=memberClans.refreshWarOfClans()
     return jsonify({'message': 'OK'}), 200
+
+
+@RaizBlueprint.route('/test35', methods=['GET'])
+def test35():
+    r=ModelWarOfClans.getWarsOfClans()
+    return jsonify({'message': 'OK',}), 200
+
+
+lightGrayFill = PatternFill(start_color="D9D9D9", end_color="D9D9D9", fill_type="solid")
+darkGrayFill = PatternFill(start_color="404040", end_color="404040", fill_type="solid")
 
 colors = ["00FF00", "80FF80", "FFFF00", "FF8000", "FF0000"]
 
@@ -92,6 +106,7 @@ def membersReport():
     myMembers = memberClans.getAllClanInfo()
     ws['P2'] = datetime.datetime.now().strftime('%Y-%m-%d')
     #Iterar los miembros 
+    member:Member
     for member in myMembers:
         ws[f'{columMembers}{initMembers+int(member.ranking) -1 }'] = member.username
         ws[f'{colCreatedAt}{initMembers+int(member.ranking) -1 }'] = member.created_at.strftime('%Y-%m-%d')
@@ -106,36 +121,40 @@ def membersReport():
 
         # Calcular la proporción
         if member.troops_requested == 0 and member.donations == 0:
-            proportion = 0.49
+            proportion = 0.2
         elif member.troops_requested == 0: # Evitar división por cero
             proportion = float('inf')  
         else:
             proportion = member.donations /  member.troops_requested
 
-        if proportion > 1.4:  
+        if proportion > 1.3:  
             fill = color_fills[0]  # Verde (muy bueno)
         elif proportion >= 1:
             fill = color_fills[1]  # Verde claro (bueno)
-        elif proportion > 0.5:
+        elif proportion > 0.4:
             fill = color_fills[2]  # Amarillo (neutral)
-        elif proportion > 0.40:
+        elif proportion > 0.20:
             fill = color_fills[3]  # Naranja (malo)
         else:
             fill = color_fills[4]  # Rojo (supermalo)
         cellPedidas.fill = fill
         cellDonadas.fill = fill
+
+
+        # Agregar las columnas de Asaltos(ataques y puntos)
         i=1
         colRaids=['D','E','F','G','H','I']
-        # Agregar las columnas de Asaltos
+        
         while len(myMembers.raids) >= i:
             print('dentro del while xdd')
             if i >3: break
             raid:Raid
-            raid = myMembers.raids[i-1]
-            ws[f'{colRaids[i*2-2]}5'] = f'Fecha: {raid.startTime.strftime("%Y-%m-%d")}'
+            raid = myMembers.raids[-i]
+            i_Asalto = i*2-2   # 0 2 4 
+            ws[f'{colRaids[i_Asalto]}5'] = f'Fecha: {raid.startTime.strftime("%Y-%m-%d")}'
 
-            cellAttack = ws[f'{colRaids[i*2-2]}{initMembers+int(member.ranking) -1 }']
-            cellPoints = ws[f'{colRaids[i*2-1]}{initMembers+int(member.ranking) -1 }']
+            cellAttack = ws[f'{colRaids[i_Asalto]}{initMembers+int(member.ranking) -1 }']
+            cellPoints = ws[f'{colRaids[i_Asalto+1]}{initMembers+int(member.ranking) -1 }']
             if raid.isMemberInRaid(member):
                 raidInfoMember = next((m for m in raid.members if m == member), None)
                 if raidInfoMember:
@@ -154,7 +173,43 @@ def membersReport():
                 pass
 
             i+=1
+
+
+        #agregar las coolumnas de Wars (ataque y estreLLas)   
+        i=1
+        colwars=['J','K','L','M','N','O']
+        while len(myMembers.wars) >= i:
+            print('dentro del while xdd')
+            if i >3: break
+            war:WarOfClans
+            war = myMembers.wars[-i]
+            i_war=i*2-2
+            ws[f'{colwars[i_war]}5'] = f'Fecha: {war.startTime.strftime("%Y-%m-%d")}'
+            cellAttack = ws[f'{colwars[i_war]}{initMembers+int(member.ranking) -1 }']
+            cellstars = ws[f'{colwars[i_war+1]}{initMembers+int(member.ranking) -1 }']
             
+            warinfoMember : WarMember
+            warinfoMember= next((m for m in war.members if m == member), None)
+            if warinfoMember:
+                """ print(f'\n\n {member.username}') """
+                cantidadAttack = warinfoMember.lenAttacks()
+                cellAttack.value = f'{cantidadAttack} / 2'
+                try:
+                    if not war.state == 'preparation': 
+                        if cantidadAttack ==0: cantidadAttack =-1
+                        color= color_fills[3-cantidadAttack]
+                        cellAttack.fill = cellstars.fill=color
+                except ValueError:
+                    pass
+                cellstars.value = f'{warinfoMember.getAllStars()} / 6'
+
+            else:
+                cellAttack.fill = cellstars.fill = lightGrayFill
+                    
+                
+
+
+            i+=1
 
 
 

@@ -1,5 +1,6 @@
 from datetime import datetime
 from enum import Enum
+from models.entities.warAttack import WarAttack
 
 class Status(Enum):
     ACTIVE = 'active'
@@ -103,7 +104,7 @@ class RaidMember(Member):
         self.attacks = attacks
         self.resourcesLooted = resourcesLooted
         self.attackLimit = attackLimit
-    
+
     def getdict(self, notNull=False):
         data = {
         'id': self.id,
@@ -127,16 +128,31 @@ class WarMember(Member):
                  attacks=None, 
                  attackLimit=2,
                  mapPosition=None,
+                 startTimeWar=None, #este Valor No es relevante NI NECESARIO Solo para ciertos procesos de agrupacion de datos 
 
 
                  **kwargs):
         # Pasar el ID al constructor de la clase padre
         super().__init__(id=id, username=username,  **kwargs)
-
-        
+        self.startTimeWar = startTimeWar #este Valor No es relevante NI NECESARIO Solo para ciertos procesos de agrupacion de datos 
+        # attacks es un SET()
         self.attacks = attacks if type(attacks) is set else set()
+
         if len(self.attacks) > attackLimit:
             raise ValueError(f"El número de ataques debe ser menor a {attackLimit}")
+        
+    def add_attack(self, attack):
+        if isinstance(attack, WarAttack):
+            self.attacks.add(attack)
+        else:
+            raise ValueError("Only WarAttack instances can be added.")
+
+    def lenAttacks(self):
+        return len(self.attacks)
+    
+    def getAllStars(self):
+        return sum(atack.stars for atack in self.attacks)
+        
 
     
     def getdict(self, notNull=False):
@@ -145,6 +161,7 @@ class WarMember(Member):
             'username': self.username,
             'attacks': [attack.getdict() for attack in self.attacks],
             'attackLimit': self.attackLimit,
+
         }
 
         if len(self.attacks) < self.attackLimit:

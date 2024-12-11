@@ -1,5 +1,6 @@
 from models.entities.member import Member
 from models.entities.raid import Raid
+from models.entities.warOfClans import WarOfClans
 class Members:  
     """ un grupo de miembros del clan con la clase member """
     def __init__(self):
@@ -17,10 +18,10 @@ class Members:
         else:
             raise ValueError("Only Member instances can be added.")
     def add_war(self, war):
-        if isinstance(war, Member):
+        if isinstance(war, WarOfClans):
             self.wars.append(war)
         else:
-            raise ValueError("Only Member instances can be added.")
+            raise ValueError("Only War instances can be added.")
 
     def remove_member(self, member):
         self.members.discard(member)  # No lanza error si no existe

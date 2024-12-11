@@ -113,9 +113,16 @@ class MemberManager:
         members.add_raid(myRaid)
         return members
 
+    def getwars(self, members:Members, AmountWars=3):
+        listWars =ModelWarOfClans.getWarsOfClans(amount=AmountWars)
+        members.wars=listWars
+        return members
+
     def getAllClanInfo(self, AmountWars=3, AmountRaids=3):
         memberOfClans = self.get_members()
         memberOfClans = self.getRaids(memberOfClans, AmountRaids=AmountRaids)
+        memberOfClans= self.getwars(members=memberOfClans, AmountWars=AmountWars)
+
         return memberOfClans
     
 
@@ -133,8 +140,8 @@ class MemberManager:
             raise Exception(f"Error al Intentar obtener los miembros de la api de Clash of Clans: {response.status_code}")
         responseJson = response.json()
         print('\n\n\n',os.getcwd(), '\n\n\n')
-        with open('backend/api/src/currentwarWarEnd.json', 'r', encoding='utf-8') as file:
-            responseJson = json.load(file)
+        """ with open('backend/api/src/currentwarWarEnd.json', 'r', encoding='utf-8') as file:
+            responseJson = json.load(file) """
         
         if responseJson == None or responseJson.get('state') == 'notInWar':
             print('\n\n\n','no hay guerra :(', '\n\n\n')
@@ -143,7 +150,7 @@ class MemberManager:
 
         claninfo = responseJson.get('clan')
         enemyClanInfo = responseJson.get('opponent')
-        
+        #crea una Intancia de War
         currentWar = WarOfClans(
             teamSize=responseJson.get('teamSize'),
             startTime=responseJson.get('startTime'),
@@ -161,6 +168,7 @@ class MemberManager:
             teamDestructionPercentage=claninfo.get('destructionPercentage'),
             enemyDestructionPercentage=enemyClanInfo.get('destructionPercentage'),
         )
+        #obtener los miembros Q participaron de la api COC 
         premembers = claninfo.get('members')
     
         currentWar.members = set(
