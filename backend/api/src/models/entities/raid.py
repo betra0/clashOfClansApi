@@ -3,10 +3,11 @@ from enum import Enum
 from models.entities.member import Member
 
 
+
 class Status(Enum):
-    ACTIVE = 'active'
-    LEFT = 'left'
-    EXPELLED = 'expelled'
+    INWAR = 'inWar'
+    ENDED='Ended'
+    PRE='preparation'
 
 class Raid:
     """ un grupo con info sobre un asalto"""
@@ -17,6 +18,7 @@ class Raid:
              raidsCompleted=None,
              totalAttacks=None,
              enemyDestroyed=None,
+             state=Status.ENDED.value,
              
              ):
         
@@ -43,6 +45,7 @@ class Raid:
         self.raidsCompleted = raidsCompleted
         self.totalAttacks = totalAttacks
         self.enemyDestroyed = enemyDestroyed
+        self.state = state
 
     def add_member(self, member):
         if isinstance(member, Member):

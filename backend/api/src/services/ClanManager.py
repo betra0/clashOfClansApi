@@ -12,7 +12,7 @@ from models.entities.raid import Raid
 from models.entities.member import Member, RaidMember
 import json
 import os
-
+from models.raidModel import ModelRaid
 
 class MemberManager:
     def __init__(self):
@@ -204,6 +204,50 @@ class MemberManager:
             raise e
 
 
+
+
+
+
+
+    def refreshRaids(self,):
+        headers = {
+            "Authorization": f"Bearer {Config.TokenCoc}"
+        }
+        ruta = Config.URL_COC + '/clans/' + '%23' + Config.ClanId + '/capitalraidseasons'
+        response = requests.get(ruta, headers=headers)
+        if response.status_code != 200:
+            raise Exception(f"Error al Intentar obtener los miembros de la api de Clash of Clans: {response.status_code}")
+        res=response.json()
+        items=res.get('items')[0]
+
+
+        myRaid= Raid(startTime=items.get('startTime'), 
+                     endTime=items.get('endTime'), 
+                     totalLoot=items.get('capitalTotalLoot'), 
+                     raidsCompleted=items.get('raidsCompleted'), 
+                     totalAttacks=items.get('totalAttacks'), 
+                     enemyDestroyed=items.get('enemyDistrictsDestroyed'))
+
+
+        myRaid.members={RaidMember(id=NewM.get('tag'), 
+                       username=NewM.get('name'), 
+                       attacks=NewM.get('attacks'), 
+                       resourcesLooted=NewM.get('capitalResourcesLooted'), 
+                       attackLimit=NewM.get('attackLimit')+NewM.get('bonusAttackLimit')
+                ) for NewM in items.get('members')}
+
+        # Guardar el objeto Raid en la base de datos
+        try:
+            if ModelRaid.refreshRaids(myRaid):
+                return myRaid
+            else:
+                raise Exception("Error al actualizar el asalto en la db")
+        except Exception as e:
+            print(f"\n Error al actualizar el asalto en la db: {e}")
+            raise e
+        
+
+        
 
 
 

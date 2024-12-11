@@ -101,9 +101,9 @@ class RaidMember(Member):
         super().__init__(id=id, username=username, **kwargs)
 
         
-        self.attacks = attacks
-        self.resourcesLooted = resourcesLooted
-        self.attackLimit = attackLimit
+        self.attacks = attacks #  es un INT Representa la cantidad de ataques realizados
+        self.resourcesLooted = resourcesLooted #  es un INT 
+        self.attackLimit = attackLimit  #  es un INT Representa 
 
     def getdict(self, notNull=False):
         data = {

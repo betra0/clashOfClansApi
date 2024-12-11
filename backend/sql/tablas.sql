@@ -26,7 +26,28 @@ CREATE TABLE players (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Fecha de registro en tu plataforma
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, -- Última actualización
     PRIMARY KEY (player_id)
-) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;     
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;   
+
+CREATE TABLE raids (
+    startTime TIMESTAMP PRIMARY KEY,
+    endTime TIMESTAMP NOT NULL,
+    totalLoot INT DEFAULT 0,
+    raidsCompleted INT DEFAULT 0, -- Cantidad de Clanes Asaltados Con exito
+    totalAttacks INT DEFAULT 0,
+    enemyDestroyed INT DEFAULT 0, -- Cantidad de aldeas Destruidas 
+    state VARCHAR(50) NOT NULL -- Estado de el asalto (ended, ...)
+);
+
+CREATE TABLE raidMembers (
+    raidStartTime TIMESTAMP NOT NULL, -- Referencia a la guerra
+    player_id VARCHAR(15) NOT NULL, -- Referencia al jugador
+    attacks INT DEFAULT 0, -- Cantidad de ataques realizados
+    resourcesLooted INT DEFAULT 0, -- Cantidad de recursos saqueados
+    attackLimit INT DEFAULT 5, -- Limite de ataques
+    PRIMARY KEY (raidStartTime, player_id),
+    FOREIGN KEY (raidStartTime) REFERENCES raids(startTime) ON DELETE CASCADE,
+    FOREIGN KEY (player_id) REFERENCES players(player_id) ON DELETE CASCADE
+);
 
 
 CREATE TABLE war (
@@ -46,6 +67,7 @@ CREATE TABLE war (
     enemyDestructionPercentage INT DEFAULT NULL,
     battleModifier VARCHAR(50) DEFAULT NULL
 );
+
 
 CREATE TABLE warMembers (
     warStartTime TIMESTAMP NOT NULL, -- Referencia a la guerra

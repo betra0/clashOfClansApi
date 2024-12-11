@@ -74,7 +74,7 @@ def test34():
 
 @RaizBlueprint.route('/test35', methods=['GET'])
 def test35():
-    r=ModelWarOfClans.getWarsOfClans()
+    r=memberClans.refreshRaids()
     return jsonify({'message': 'OK',}), 200
 
 
