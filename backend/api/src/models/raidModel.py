@@ -78,3 +78,63 @@ class ModelRaid():
             raise e
         finally:
             cls.db.close_connection(connection)
+
+
+    @classmethod
+    def getRaids(cls,  amount=3):
+        connection = cls.db.create_connection()
+        cursor = connection.cursor(dictionary=True)
+        try:
+            sql = """
+            WITH RecentRaids AS (
+                SELECT startTime
+                FROM raids
+                ORDER BY startTime DESC
+                LIMIT %s
+            )
+            SELECT 
+                r.startTime,
+                r.endTime,
+                r.totalLoot,
+                r.raidsCompleted,
+                r.totalAttacks,
+                r.enemyDestroyed,
+                r.state,
+                rm.player_id,
+                rm.attacks,
+                rm.resourcesLooted,
+                rm.attackLimit
+            FROM raids r
+            JOIN RecentRaids rr ON r.startTime = rr.startTime
+            JOIN raidMembers rm ON r.startTime = rm.raidStartTime
+            ORDER BY r.startTime DESC;
+            """
+            cursor.execute(sql, (amount,))
+            rows = cursor.fetchall()
+            raidDict = {}
+            for row in rows:
+                if row['startTime'] not in raidDict:
+                    raidDict[row['startTime']] = Raid(
+                        startTime=row['startTime'],
+                        endTime=row['endTime'],
+                        totalLoot=row['totalLoot'],
+                        raidsCompleted=row['raidsCompleted'],
+                        totalAttacks=row['totalAttacks'],
+                        enemyDestroyed=row['enemyDestroyed'],
+                        state=row['state']
+                    )
+                raidDict[row['startTime']].add_member(
+                    RaidMember(
+                        id=row['player_id'],
+                        attacks=row['attacks'],
+                        resourcesLooted=row['resourcesLooted'],
+                        attackLimit=row['attackLimit']
+                    )
+                )
+            raidsList = sorted(raidDict.values(), key=lambda x: x.startTime, reverse=True)
+
+            return raidsList
+        except Exception as e:
+            raise e
+        finally:
+            cls.db.close_connection(connection)

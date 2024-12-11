@@ -12,6 +12,7 @@ from models.entities.raid import Raid
 from models.warClansModels import ModelWarOfClans
 from models.entities.warOfClans import WarOfClans
 from models.entities.member import WarMember, Member
+from models.raidModel import ModelRaid
 
 
 
@@ -69,13 +70,14 @@ def Raids():
 @RaizBlueprint.route('/test34', methods=['GET'])
 def test34():
     r=memberClans.refreshWarOfClans()
+    s=memberClans.refreshRaids()
     return jsonify({'message': 'OK'}), 200
 
 
 @RaizBlueprint.route('/test35', methods=['GET'])
 def test35():
-    r=memberClans.refreshRaids()
-    return jsonify({'message': 'OK',}), 200
+    r=ModelRaid.getRaids()
+    return jsonify({'message': 'OK', }), 200
 
 
 lightGrayFill = PatternFill(start_color="D9D9D9", end_color="D9D9D9", fill_type="solid")

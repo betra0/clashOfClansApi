@@ -5,7 +5,7 @@ from models.entities.member import Member
 
 
 class Status(Enum):
-    INWAR = 'inWar'
+    IN = 'ongoing'
     ENDED='Ended'
     PRE='preparation'
 

@@ -83,34 +83,9 @@ class MemberManager:
             raise e
 
     def getRaids(self, members:Members, AmountRaids=3,):
-        headers = {
-            "Authorization": f"Bearer {Config.TokenCoc}"
-        }
-        ruta = Config.URL_COC + '/clans/' + '%23' + Config.ClanId + '/capitalraidseasons'
-        response = requests.get(ruta, headers=headers)
-        if response.status_code != 200:
-            raise Exception(f"Error al Intentar obtener los miembros de la api de Clash of Clans: {response.status_code}")
-        res=response.json()
-        items=res.get('items')[0]
-
-
-        myRaid= Raid(startTime=items.get('startTime'), 
-                     endTime=items.get('endTime'), 
-                     totalLoot=items.get('capitalTotalLoot'), 
-                     raidsCompleted=items.get('raidsCompleted'), 
-                     totalAttacks=items.get('totalAttacks'), 
-                     enemyDestroyed=items.get('enemyDistrictsDestroyed'))
-
-
-        myRaid.members={RaidMember(id=NewM.get('tag'), 
-                       username=NewM.get('name'), 
-                       attacks=NewM.get('attacks'), 
-                       resourcesLooted=NewM.get('capitalResourcesLooted'), 
-                       attackLimit=NewM.get('attackLimit')+NewM.get('bonusAttackLimit')
-                ) for NewM in items.get('members')}
-
-
-        members.add_raid(myRaid)
+        
+        raidList =ModelRaid.getRaids(amount=AmountRaids)
+        members.raids=raidList
         return members
 
     def getwars(self, members:Members, AmountWars=3):
@@ -226,7 +201,9 @@ class MemberManager:
                      totalLoot=items.get('capitalTotalLoot'), 
                      raidsCompleted=items.get('raidsCompleted'), 
                      totalAttacks=items.get('totalAttacks'), 
-                     enemyDestroyed=items.get('enemyDistrictsDestroyed'))
+                     enemyDestroyed=items.get('enemyDistrictsDestroyed'),
+                     state=items.get('state')
+                     )
 
 
         myRaid.members={RaidMember(id=NewM.get('tag'), 
