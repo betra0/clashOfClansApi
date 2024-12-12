@@ -165,7 +165,7 @@ class ModelMember():
                     sql = """
                     UPDATE players
                     SET 
-
+                        username = %s,
                         role = %s,
                         townhall_level = %s,
                         trophies = %s,
@@ -183,6 +183,7 @@ class ModelMember():
                     WHERE player_id = %s
                     """
                     cursor.execute(sql, (
+                        member.username,
                         member.role,
                         member.townhall_level,
                         member.trophies,

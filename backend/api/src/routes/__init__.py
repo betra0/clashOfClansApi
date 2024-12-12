@@ -97,7 +97,7 @@ color_fills = [
 @RaizBlueprint.route('/report', methods=['GET'])
 def membersReport():
 
-    template_path = 'backend/api/src/templates/report.xlsx'
+    template_path = Config.patchTempReport
     wb = load_workbook(template_path)
     ws = wb.active
     columMembers ='B'

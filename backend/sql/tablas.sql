@@ -1,7 +1,12 @@
 
 
-
+DROP TABLE IF EXISTS `warAttacks`;
+DROP TABLE IF EXISTS `warMembers`;
+DROP TABLE IF EXISTS `war`;
+DROP TABLE IF EXISTS `raidMembers`;
+DROP TABLE IF EXISTS `raids`;
 DROP TABLE IF EXISTS `players`;
+
 
 
 CREATE TABLE players (
@@ -68,7 +73,7 @@ CREATE TABLE war (
     battleModifier VARCHAR(50) DEFAULT NULL
 );
 
-
+        
 CREATE TABLE warMembers (
     warStartTime TIMESTAMP NOT NULL, -- Referencia a la guerra
     player_id VARCHAR(15) NOT NULL, -- Referencia al jugador

@@ -7,3 +7,4 @@ mysql-connector-python
 PyJWT
 apscheduler
 openpyxl
+gunicorn

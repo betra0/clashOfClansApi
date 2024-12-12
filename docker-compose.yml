@@ -8,6 +8,8 @@ services:
       context: ./backend/web
     networks:
       - back-network
+    ports:
+      - "80:80"
 
   db:
     image: mysql:8.0.39
@@ -15,38 +17,43 @@ services:
     networks:
       - back-network
     environment:
-      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
       - TZ=America/Santiago
-      - MYSQL_DATABASE=${DATABASE}
+      - MYSQL_DATABASE=${DB}
+    ports:
+      - "5001:3306"
       
     volumes:
-      - db-data:/var/lib/mysql
-      - ./api/sql/tablas.sql:/docker-entrypoint-initdb.d/01_tablas.sql
-      - ./api/sql/insert.sql:/docker-entrypoint-initdb.d/02_insert.sql
+      - ./backend/datasql:/var/lib/mysql
+      - ./backend/sql/tablas.sql:/docker-entrypoint-initdb.d/01_tablas.sql
+
 
   
   api1:
     build:
-      context: ./api
+      context: ./backend/api
     restart: always
     networks:
       - back-network
     environment:
       - DB_HOST=db
-      - DB_USER=${DB_USER}
-      - DB_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
-      - DATABASE=${DATABASE}
+      - DB_USER=root
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB=${DB}
       - DOKER=True
       - SECRET_KEY=${SECRET_KEY}
       - EMAIL_LOG=${EMAIL_LOG}
       - EMAIL_MAIL=${EMAIL_MAIL}
       - EMAIL_TOKEN=${EMAIL_TOKEN}
+      - TOKEN_COC=${TOKEN_COC}
+      - CLAN_ID=${CLAN_ID}
+      - URL_COC=${URL_COC}
       - RUTA_LOG=/app/log
       - RUTA_TESIS_FILE=/var/tesis
     depends_on:
       - db
     volumes:
-      - file-tesis:/var/tesis
+
       - logs-api:/app/log
  
 networks:
@@ -54,6 +61,4 @@ networks:
     driver: bridge
 
 volumes:
-  db-data:
-  file-tesis:
   logs-api:
