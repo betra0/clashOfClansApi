@@ -8,3 +8,4 @@ PyJWT
 apscheduler
 openpyxl
 gunicorn
+apscheduler==3.11.0

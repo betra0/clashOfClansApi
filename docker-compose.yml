@@ -32,6 +32,7 @@ services:
   api1:
     build:
       context: ./backend/api
+      dockerfile: dockerfile
     restart: always
     networks:
       - back-network
@@ -53,8 +54,34 @@ services:
     depends_on:
       - db
     volumes:
-
       - logs-api:/app/log
+    
+
+  cron_jobs:
+    build:
+      context: ./backend/api  
+      dockerfile: dockerfile.cronjobs
+    restart: always
+
+    environment:
+      - DB_HOST=db
+      - DB_USER=root
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB=${DB}
+      - DOKER=True
+      - SECRET_KEY=${SECRET_KEY}
+      - EMAIL_LOG=${EMAIL_LOG}
+      - EMAIL_MAIL=${EMAIL_MAIL}
+      - EMAIL_TOKEN=${EMAIL_TOKEN}
+      - TOKEN_COC=${TOKEN_COC}
+      - CLAN_ID=${CLAN_ID}
+      - URL_COC=${URL_COC}
+      - RUTA_LOG=/app/log
+      - RUTA_TESIS_FILE=/var/tesis
+    depends_on:
+      - db
+    networks:
+      - back-network
  
 networks:
   back-network:
