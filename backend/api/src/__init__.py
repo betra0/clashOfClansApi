@@ -3,7 +3,7 @@ import requests
 from flask import Flask, request, jsonify
 from config import Config
 from flask_cors import CORS
-import logging
+""" import logging """
 import sys
 from routes import RaizBlueprint
 
@@ -16,15 +16,15 @@ app = CustomFlask(__name__)
 CORS(app, supports_credentials=True)
 
 # Configura el logger
-app.logger.setLevel(logging.DEBUG)
+""" app.logger.setLevel(logging.DEBUG) """
 
 # Redirige stdout a los logs de Flask
-class StdoutToLogger(object):
+""" class StdoutToLogger(object):
     def write(self, message):
         if message != '\n':  # Evita los saltos de línea vacíos
             app.logger.debug(message)
 
-sys.stdout = StdoutToLogger()
+sys.stdout = StdoutToLogger() """
 
 app.register_blueprint(RaizBlueprint, url_prefix='/')
 

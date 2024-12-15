@@ -69,9 +69,17 @@ def Raids():
 
 @RaizBlueprint.route('/test34', methods=['GET'])
 def test34():
-    r=memberClans.refreshWarOfClans()
-    s=memberClans.refreshRaids()
+    r=memberClans.refreshAllClanInfo()
     return jsonify({'message': 'OK'}), 200
+
+@RaizBlueprint.route('/reload', methods=['GET'])
+def refreshD():
+    try:
+        r=memberClans.refreshAllClanInfo()
+        return jsonify({'message': 'OK'}), 200
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 
 @RaizBlueprint.route('/test35', methods=['GET'])
@@ -102,11 +110,11 @@ def membersReport():
     ws = wb.active
     columMembers ='B'
     colCreatedAt='C'
-    colDonations='P'
-    colPedidas='Q'
+    colDonations='R'
+    colPedidas='S'
     initMembers=7
-    myMembers = memberClans.getAllClanInfo()
-    ws['P2'] = datetime.datetime.now().strftime('%Y-%m-%d')
+    myMembers = memberClans.getAllClanInfo(AmountWars=4)
+    ws['P2'] = datetime.datetime.now().strftime('%Y-%m-%d  %H:%M:%S')
     #Iterar los miembros 
     member:Member
     for member in myMembers:
@@ -179,10 +187,10 @@ def membersReport():
 
         #agregar las coolumnas de Wars (ataque y estreLLas)   
         i=1
-        colwars=['J','K','L','M','N','O']
+        colwars=['J','K','L','M','N','O', 'P','Q']
         while len(myMembers.wars) >= i:
             print('dentro del while xdd')
-            if i >3: break
+            if i >4: break
             war:WarOfClans
             war = myMembers.wars[-i]
             i_war=i*2-2

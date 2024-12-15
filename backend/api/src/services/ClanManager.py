@@ -13,13 +13,20 @@ from models.entities.member import Member, RaidMember
 import json
 import os
 from models.raidModel import ModelRaid
+import logging
+
+logging.basicConfig(level=logging.INFO)
 
 class MemberManager:
     def __init__(self):
         self.last_called = None
 
-    def get_members(self, onlyRefresk=False):
+    def get_members(self, onlyRefresk=False, refreshDb=None):
+        #cuando RefreskDb es True se refresca la db Si o si 
+        #si es none se refresca solo si es necesario 
+        #si es False no se refresca la db
         now = time.time()
+        logging.info(f"Obteniendo los miembros del clan")
         
         # Calcular el tiempo desde la última llamada
         if self.last_called is None:
@@ -28,8 +35,11 @@ class MemberManager:
             elapsed_time = now - self.last_called
 
         dbMembers = ModelMember.getAllMembers()
-        if elapsed_time is not None and elapsed_time < 15:
-            return  dbMembers
+
+        if refreshDb is not True:
+            if refreshDb is False or (refreshDb is None and elapsed_time is not None and elapsed_time < 15):
+                return dbMembers
+
         
         headers = {
             "Authorization": f"Bearer {Config.TokenCoc}"
@@ -93,8 +103,8 @@ class MemberManager:
         members.wars=listWars
         return members
 
-    def getAllClanInfo(self, AmountWars=3, AmountRaids=3):
-        memberOfClans = self.get_members()
+    def getAllClanInfo(self, AmountWars=3, AmountRaids=3, refreshDb=None):
+        memberOfClans = self.get_members(refreshDb=refreshDb)
         memberOfClans = self.getRaids(memberOfClans, AmountRaids=AmountRaids)
         memberOfClans= self.getwars(members=memberOfClans, AmountWars=AmountWars)
 
@@ -106,6 +116,7 @@ class MemberManager:
 
 
     def refreshWarOfClans(self):
+        logging.info("actualizando la informacion de la guerra")
         ruta = Config.URL_COC + '/clans/' + '%23' + Config.ClanId + '/currentwar'
         headers = {
             "Authorization": f"Bearer {Config.TokenCoc}"
@@ -185,6 +196,7 @@ class MemberManager:
 
 
     def refreshRaids(self,):
+        logging.info("actualizando la informacion de los asaltos")
         headers = {
             "Authorization": f"Bearer {Config.TokenCoc}"
         }
@@ -225,6 +237,26 @@ class MemberManager:
         
 
         
+
+
+    def refreshAllClanInfo(self, ):
+        logging.info("Comemnzando a refrescar la informacion del clan")    
+        try:
+            self.get_members(refreshDb=True, onlyRefresk=True)
+        except Exception as e:
+            logging.error(f"Error al intentar obtener los miembros del clan: {e}")
+            raise e
+        try:
+            self.refreshWarOfClans()
+        except Exception as e:
+            logging.error(f"Error al intentar obtener la informacion de la guerra: {e}")
+            raise e
+        try:
+            self.refreshRaids()
+        except Exception as e:
+            logging.error(f"Error al intentar obtener la informacion de los asaltos: {e}")
+            raise e
+        logging.info("Se ha actualizado la informacion del clan")
 
 
 
