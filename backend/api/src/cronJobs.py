@@ -17,16 +17,21 @@ def ejecutar_en_evento():
     print("¡Evento ejecutado en el tiempo programado!")
 
 def refreshInfoClan():
+    global isError
     errorId = "ErrorRefreshInfoClan"  # ID único para identificar el evento
     try:
         refreshAllInfoClan()
         logging.info("Información del clan actualizada exitosamente.")
+        isError=False
         
     except Exception as e:
-        if not scheduler.get_job(errorId):
+        logging.error(f"\n ocurrio Un error al ejecutar la funcion Programada 'refreshInfoClan' : {e}\n")
+        if not scheduler.get_job(errorId) and not isError:
+            isError=True
+            logging.error(f"\n Preparandose para reintentar la ejecución de la función 'refreshInfoClan' en 30 segundos.\n")
             scheduler.add_job(
                 refreshInfoClan,  # Función a ejecutar
-                trigger=DateTrigger(run_date=(datetime.now() + timedelta(seconds=30))), 
+                trigger=DateTrigger(run_date=(datetime.now() + timedelta(seconds=60))), 
                 id=errorId 
             )
         logging.error(f"\n Error al ejecutar el Actualizar la Info del clan: {e}\n")
@@ -63,8 +68,8 @@ if __name__ == "__main__":
     # Programar un evento recurrente cada hora
     scheduler.add_job(
         refreshInfoClan,  # Función a ejecutar
-        trigger=IntervalTrigger(minutes=10, seconds=10),  # Intervalo de tiempo
-        id="evento_recurrente"  # ID único para evitar duplicados
+        trigger=IntervalTrigger(minutes=5),  # Intervalo de tiempo
+        id="refreshInfoClanPeriodic"  # ID único para evitar duplicados
     )
 
     # Mantener el scheduler en ejecución

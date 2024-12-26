@@ -11,6 +11,7 @@ class MySQLConnection:
         self.password = password
         self.port = port
         self.connection = None
+        self.time_zone = '+00:00'
     def connect(self):
         try:
             self.connection = mysql.connector.connect(
@@ -18,7 +19,9 @@ class MySQLConnection:
                 database=self.database,
                 user=self.user,
                 password=self.password,
-                port=self.port)
+                port=self.port,
+                time_zone=self.time_zone)
+            
             if self.connection.is_connected():
                 pass
                 #print('Connected to MySQL database')

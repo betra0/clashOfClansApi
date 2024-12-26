@@ -239,18 +239,24 @@ class MemberManager:
         
 
 
-    def refreshAllClanInfo(self, ):
+    def refreshAllClanInfo(self, retard=1):
         logging.info("Comemnzando a refrescar la informacion del clan")    
         try:
             self.get_members(refreshDb=True, onlyRefresk=True)
         except Exception as e:
             logging.error(f"Error al intentar obtener los miembros del clan: {e}")
             raise e
+        
+        time.sleep(retard)
+
         try:
             self.refreshWarOfClans()
         except Exception as e:
             logging.error(f"Error al intentar obtener la informacion de la guerra: {e}")
             raise e
+        
+        time.sleep(retard)
+
         try:
             self.refreshRaids()
         except Exception as e:
