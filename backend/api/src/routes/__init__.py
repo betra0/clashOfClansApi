@@ -110,8 +110,8 @@ def membersReport():
     ws = wb.active
     columMembers ='B'
     colCreatedAt='C'
-    colDonations='R'
-    colPedidas='S'
+    colDonations='T'
+    colPedidas='U'
     initMembers=7
     myMembers = memberClans.getAllClanInfo(AmountWars=4)
     ws['P2'] = datetime.datetime.now().strftime('%Y-%m-%d  %H:%M:%S')
@@ -187,7 +187,7 @@ def membersReport():
 
         #agregar las coolumnas de Wars (ataque y estreLLas)   
         i=1
-        colwars=['J','K','L','M','N','O', 'P','Q']
+        colwars=['K','L','M','N','O', 'P','Q','R']
         while len(myMembers.wars) >= i:
             print('dentro del while xdd')
             if i >4: break
