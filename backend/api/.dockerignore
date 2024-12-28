@@ -1,0 +1,43 @@
+# Ignorar archivos y directorios específicos
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info
+*.dist-info
+
+# Ignorar archivos de configuración de entorno virtual
+env/
+venv/
+ENV/
+.venv/
+.ENV/
+
+# Ignorar archivos de configuración de IDE
+.vscode/
+.idea/
+*.swp
+
+# Ignorar archivos de configuración de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de logs
+*.log
+
+# Ignorar archivos de configuración de Docker
+.dockerignore
+Dockerfile
+
+# Ignorar archivos de configuración de Git
+.git
+.gitignore
+
+# Ignorar archivos de configuración de pruebas
+.coverage
+.tox/
+.nox/
+pytest_cache/
+htmlcov/
