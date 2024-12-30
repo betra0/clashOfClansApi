@@ -109,11 +109,12 @@ def membersReport():
     wb = load_workbook(template_path)
     ws = wb.active
     columMembers ='B'
-    colCreatedAt='C'
-    colDonations='T'
-    colPedidas='U'
+    colCreatedAt='D'
+    colDonations='W'
+    colPedidas='X'
+    colTh='C'
     initMembers=7
-    myMembers = memberClans.getAllClanInfo(AmountWars=4)
+    myMembers = memberClans.getAllClanInfo(AmountWars=5)
     ws['P2'] = datetime.datetime.now().strftime('%Y-%m-%d  %H:%M:%S')
     #Iterar los miembros 
     member:Member
@@ -121,6 +122,7 @@ def membersReport():
         ws[f'{columMembers}{initMembers+int(member.ranking) -1 }'] = member.username
         ws[f'{colCreatedAt}{initMembers+int(member.ranking) -1 }'] = member.created_at.strftime('%Y-%m-%d')
         ws[f'A{initMembers+int(member.ranking) -1 }'] = member.ranking
+        ws[f'{colTh}{initMembers+int(member.ranking) -1}'] = member.townhall_level
         
 
         cellDonadas = ws[f'{colDonations}{initMembers+int(member.ranking) -1 }']
@@ -153,7 +155,7 @@ def membersReport():
 
         # Agregar las columnas de Asaltos(ataques y puntos)
         i=1
-        colRaids=['D','E','F','G','H','I']
+        colRaids=['E','F','G','H','I','J']
         
         while len(myMembers.raids) >= i:
             print('dentro del while xdd')
@@ -173,8 +175,8 @@ def membersReport():
                     cellPoints.fill = color_fills[1]
                     cellAttack.fill = color_fills[1]
                 else:
-                    cellAttack.value = '0'
-                    cellPoints.value = '0'
+                    cellAttack.value = 0
+                    cellPoints.value = 0
                     cellAttack.fill = color_fills[4]
                     cellPoints.fill = color_fills[4]
                     # el miembro Posiblemente estubo Pero No Ataco 
@@ -187,10 +189,10 @@ def membersReport():
 
         #agregar las coolumnas de Wars (ataque y estreLLas)   
         i=1
-        colwars=['K','L','M','N','O', 'P','Q','R']
+        colwars=['L','M','N','O', 'P','Q','R','S','T','U']
         while len(myMembers.wars) >= i:
             print('dentro del while xdd')
-            if i >4: break
+            if i >5: break
             war:WarOfClans
             war = myMembers.wars[-i]
             i_war=i*2-2

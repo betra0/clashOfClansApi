@@ -1,2 +1,3 @@
 datasql/
 .env
+backend/api/src/templates/~$report.xlsx

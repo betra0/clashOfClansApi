@@ -1,3 +1,5 @@
+
+~$report.xlsx
 # Ignorar archivos y directorios específicos
 __pycache__/
 *.pyc
@@ -41,3 +43,4 @@ Dockerfile
 .nox/
 pytest_cache/
 htmlcov/
+
