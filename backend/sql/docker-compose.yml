@@ -1,0 +1,17 @@
+
+services:
+  mysql:
+    image: mysql:8.0.39
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DBPASS}
+      - TZ=America/Santiago
+      - MYSQL_DATABASE=${DATABASE}
+      - MYSQL_PASSWORD=${DBPASS}
+
+    ports:
+      - ${DBPORT}:3306
+    volumes:
+      - ./datasql:/var/lib/mysql
+      - ./tablas.sql:/docker-entrypoint-initdb.d/01_tablas.sql
+      - ./insert.sql:/docker-entrypoint-initdb.d/02_insert.sql
+

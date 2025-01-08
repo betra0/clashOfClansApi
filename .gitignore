@@ -1,3 +1,5 @@
 datasql/
+datasqlrespaldo/
 .env
 backend/api/src/templates/~$report.xlsx
+ignore/

@@ -2,12 +2,14 @@ services:
  
   
 
-  back-web:
+  backweb:
     restart: always
     build:
       context: ./backend/web
     networks:
       - back-network
+    depends_on:
+      - api1
     ports:
       - "80:80"
 
@@ -41,6 +43,7 @@ services:
       - DB_USER=root
       - DB_PASSWORD=${DB_PASSWORD}
       - DB=${DB}
+      - DB_PORT=3306
       - DOKER=True
       - SECRET_KEY=${SECRET_KEY}
       - EMAIL_LOG=${EMAIL_LOG}
@@ -68,6 +71,7 @@ services:
       - DB_USER=root
       - DB_PASSWORD=${DB_PASSWORD}
       - DB=${DB}
+      - DB_PORT=3306
       - DOKER=True
       - SECRET_KEY=${SECRET_KEY}
       - EMAIL_LOG=${EMAIL_LOG}
