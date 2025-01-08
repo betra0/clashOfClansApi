@@ -27,8 +27,11 @@ class Member:
              status=Status.ACTIVE.value,
              left_date=None,
              notes=None,
+             accumulatedDonations=None,
+             accumulatedTroopsRequested=None,
              created_at=None,
-             updated_at=None):
+             updated_at=None
+             ):
         
         self.id = id
         self.username = username
@@ -48,6 +51,8 @@ class Member:
         self.status = status
         self.left_date = left_date
         self.notes = notes
+        self.accumulatedDonations = accumulatedDonations
+        self.accumulatedTroopsRequested = accumulatedTroopsRequested
         self.created_at = created_at or datetime.now()
         self.updated_at = updated_at or datetime.now()
     
@@ -79,6 +84,8 @@ class Member:
         'status': self.status,
         'left_date': self.left_date.isoformat() if self.left_date else None,
         'notes': self.notes,
+        'accumulatedDonations': self.accumulatedDonations,
+        'accumulatedTroopsRequested': self.accumulatedTroopsRequested,
         'created_at': self.created_at.isoformat() if isinstance(self.created_at, datetime) else self.created_at,
         'updated_at': self.updated_at.isoformat() if isinstance(self.updated_at, datetime) else self.updated_at,
         }

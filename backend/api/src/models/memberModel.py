@@ -3,6 +3,7 @@ from database.db import MySQLConnectionManager
 from utils.logger import Logger
 from models.entities.member import Member 
 from models.entities.members import Members
+from config import Config
 
 class ModelMember():
 
@@ -10,35 +11,38 @@ class ModelMember():
 
     
     @classmethod
-    def getAllMembers(cls):
+    def getAllMembers(cls, clan_tag=Config.ClanId):
         connection = cls.db.create_connection()
         cursor = connection.cursor(dictionary=True)
 
         try:
             sql = """
             SELECT 
-                player_id as id, 
-                username, 
-                clan_tag,
-                role, 
-                townhall_level,
-                trophies, 
-                best_trophies, 
-                ranking, 
-                donations, 
-                troops_requested, 
-                war_stars, 
-                experience_level, 
-                league, 
-                attack_count, 
-                defense_count, 
-                status, 
-                left_date, 
-                notes, 
-                created_at, 
-                updated_at
-            FROM players 
-            WHERE status = 'active'
+                p.player_id as id, 
+                p.username, 
+                p.clan_tag,
+                p.role, 
+                p.townhall_level,
+                p.trophies, 
+                p.best_trophies, 
+                p.ranking, 
+                p.donations, 
+                p.troops_requested, 
+                p.war_stars, 
+                p.experience_level, 
+                p.league, 
+                p.attack_count, 
+                p.defense_count, 
+                p.status, 
+                p.left_date, 
+                p.notes, 
+                p.created_at, 
+                p.updated_at,
+                pic.accumulatedDonations,
+                pic.accumulatedTroopsRequested
+            FROM players p
+            INNER JOIN playersInClans pic ON p.player_id = pic.player_id
+            WHERE p.status = 'active'
             """
             cursor.execute(sql)
             rows = cursor.fetchall()
@@ -68,7 +72,10 @@ class ModelMember():
                     left_date=row['left_date'],
                     notes=row['notes'],
                     created_at=row['created_at'],
-                    updated_at=row['updated_at']
+                    updated_at=row['updated_at'],
+                    accumulatedDonations=row['accumulatedDonations'],
+                    accumulatedTroopsRequested=row['accumulatedTroopsRequested']
+                    
                     )
                 )
                 
@@ -155,8 +162,25 @@ class ModelMember():
                         newMember.attack_count, 
                         newMember.defense_count,
                         newMember.status
-
-
+                    ))
+                    sql = f"""
+                        INSERT INTO playersInClans (
+                            player_id, 
+                            clan_tag,
+                            accumulatedDonations,
+                            accumulatedTroopsRequested
+                        )
+                        VALUES (%s, %s, %s, %s)
+                        ON DUPLICATE KEY UPDATE
+                            accumulatedDonations = VALUES(accumulatedDonations),
+                            accumulatedTroopsRequested = VALUES(accumulatedTroopsRequested);
+                        """
+                    cursor.execute(sql, (
+                        newMember.id,
+                        newMember.clan_tag,
+                        newMember.accumulatedDonations,
+                        newMember.accumulatedTroopsRequested,
+                        
                     ))
                 connection.commit()
             # Actualizar miembros existentes
@@ -198,6 +222,22 @@ class ModelMember():
                         member.defense_count,
                         member.status,
                         member.id
+                    ))
+                    sql = f"""
+                        UPDATE playersInClans 
+                        SET
+
+                            accumulatedDonations = %s,
+                            accumulatedTroopsRequested = %s
+                        WHERE player_id = %s AND clan_tag = %s
+                        
+
+                        """
+                    cursor.execute(sql, (
+                        member.accumulatedDonations,
+                        member.accumulatedTroopsRequested,
+                        member.id,
+                        member.clan_tag
                     ))
                 connection.commit()
 

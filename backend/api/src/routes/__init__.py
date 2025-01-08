@@ -52,9 +52,10 @@ def Clan():
 
 @RaizBlueprint.route('/members', methods=['GET'])
 def MembersEndpoint():
-    members = memberClans.get_members()
+    members:Members = memberClans.get_members()
 
-    return jsonify({'members': members.getdict(notNull=True)}), 200
+    return jsonify({'members': members.getdict(notNull=True), 
+                    'lenMembers':len(members.members) }), 200
 
 @RaizBlueprint.route('/raids', methods=['GET'])
 def Raids():

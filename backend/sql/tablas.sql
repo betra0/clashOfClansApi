@@ -7,7 +7,13 @@ DROP TABLE IF EXISTS `raidMembers`;
 DROP TABLE IF EXISTS `raids`;
 DROP TABLE IF EXISTS `players`;
 
-
+CREATE TABLE clans (
+    clan_tag VARCHAR(15) NOT NULL UNIQUE, -- Etiqueta del clan (proveniente de la API de Clash of Clans)
+    clan_name VARCHAR(50) NOT NULL,       -- Nombre del clan
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Fecha de registro en tu plataforma
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, -- Última actualización
+    PRIMARY KEY (clan_tag)
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
 
 CREATE TABLE players (
     player_id VARCHAR(12) NOT NULL UNIQUE, -- ID único del jugador (proveniente de la API de Clash of Clans)
@@ -32,6 +38,17 @@ CREATE TABLE players (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, -- Última actualización
     PRIMARY KEY (player_id)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;   
+
+-- EN PLAYERSiNcLAN quIERO Guardar datos especificos del clan como Donaciones Acumuladas y y tropas pedidas Acumuladas 
+CREATE TABLE playersInClans (
+    player_id VARCHAR(12) NOT NULL, -- Referencia al jugador
+    clan_tag VARCHAR(15) NOT NULL, -- Referencia al clan
+    accumulatedDonations INT DEFAULT 0, -- Donaciones Acumuladas
+    accumulatedTroopsRequested INT DEFAULT 0, -- Tropas Pedidas Acumuladas
+    PRIMARY KEY (player_id, clan_tag),
+    FOREIGN KEY (player_id) REFERENCES players(player_id) ON DELETE CASCADE,
+    FOREIGN KEY (clan_tag) REFERENCES clans(clan_tag) ON DELETE CASCADE
+);
 
 CREATE TABLE raids (
     startTime TIMESTAMP PRIMARY KEY,

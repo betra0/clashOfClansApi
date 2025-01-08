@@ -45,16 +45,21 @@ class MemberManager:
             "Authorization": f"Bearer {Config.TokenCoc}"
         }
         ruta = Config.URL_COC + '/clans/' + '%23' + Config.ClanId + '/members'
+        #Respuesta de la api
         response = requests.get(ruta, headers=headers)
         if response.status_code != 200:
             raise Exception(f"Error al Intentar obtener los miembros de la api de Clash of Clans: {response.status_code}")
 
         apiMembersList = response.json().get('items')
         apiMembersObject = Members()
+        memberInDB: Member
+        difDonations:int = 0
+        difPedidas:int = 0
         for item in apiMembersList:
-            apiMembersObject.add_member(Member(
+            nMember = Member(
                 id=item["tag"],
                 username=item["name"],
+                clan_tag=f'#{Config.ClanId}',
                 role=item["role"],
                 townhall_level=item['townHallLevel'],
                 trophies=item['trophies'],
@@ -62,7 +67,22 @@ class MemberManager:
                 donations=item['donations'],
                 troops_requested=item['donationsReceived'],
                 experience_level=item['expLevel'],
-            ))
+            )
+            memberInDB= next((m for m in dbMembers.members if m == nMember), None)
+            if memberInDB:
+                difDonations = nMember.donations - memberInDB.donations
+                difPedidas = nMember.troops_requested - memberInDB.troops_requested
+                if difDonations < 0:
+                    difDonations = 0
+                if difPedidas < 0:
+                    difPedidas = 0
+                nMember.accumulatedDonations = difDonations + memberInDB.accumulatedDonations
+                nMember.accumulatedTroopsRequested = difPedidas + memberInDB.accumulatedTroopsRequested
+            else:
+                nMember.accumulatedDonations = nMember.donations
+                nMember.accumulatedTroopsRequested = nMember.troops_requested
+            apiMembersObject.add_member(nMember)
+
 
 
         newMembers = Members()  # Crear un nuevo objeto Members
@@ -70,14 +90,16 @@ class MemberManager:
 
         deleteMembers = Members()  # Crear un nuevo objeto Members
         deleteMembers.members = dbMembers.members - apiMembersObject.members
+        memberActualizar = Members()
+        memberActualizar.members = apiMembersObject.members - newMembers.members
         
 
-        print('\n\n\n', 'newMembers:', '\n\n\n', newMembers.getdict(), '\n\n\n')
-        print('\n\n\n', 'deleteMembers:', '\n\n\n', deleteMembers.getdict(), '\n\n\n')
-        print('\n\n\n', 'actuales a Actualizar:', '\n\n\n', apiMembersObject.getdict(), '\n\n\n')
+        print('\n\n\n', 'newMembers:', '\n\n\n', len(newMembers.members), '\n\n\n')
+        print('\n\n\n', 'deleteMembers:', '\n\n\n', len(deleteMembers.members), '\n\n\n')
+        print('\n\n\n', 'actuales a Actualizar:', '\n\n\n', len(memberActualizar.members), '\n\n\n')
 
         try:
-            ModelMember.refreshMembers(deleteMembers, newMembers, apiMembersObject)
+            ModelMember.refreshMembers(deleteMembers, newMembers, memberActualizar)
         except Exception as e:
             print(f"Error al actualizar los miembros en la db: {e}")
             raise e
@@ -86,6 +108,7 @@ class MemberManager:
             self.last_called = now
             if not onlyRefresk:
                 actualMembers = ModelMember.getAllMembers()
+                
             
                 return actualMembers
         except Exception as e:
