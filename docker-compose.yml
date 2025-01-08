@@ -29,6 +29,23 @@ services:
       - ./backend/datasql:/var/lib/mysql
       - ./backend/sql/tablas.sql:/docker-entrypoint-initdb.d/01_tablas.sql
 
+  discord-bot:
+    build:
+      context: ./backend/discordbot
+      dockerfile: Dockerfile        # Asegúrate de tener un Dockerfile configurado en esa carpeta
+    container_name: discord-bot
+    restart: always               # El contenedor se reinicia siempre que se detenga
+    environment:
+      - BOTDSTOKEN=${BOTDSTOKEN}   # Token del bot
+      - APIHOST=backweb            # Nombre del servicio backend para la API
+      - APIPORT=80                 # Puerto del servicio API
+      - INTENTSDS=${INTENTSDS}     # Intenciones necesarias para el bot
+    depends_on:
+      - backweb                    # El bot depende de que el servicio 'backweb' esté disponible
+    volumes:
+      - bot-ds:/app                # Monta el código en el contenedor para persistencia
+    networks:
+      - back-network
 
   
   api1:
@@ -93,3 +110,4 @@ networks:
 
 volumes:
   logs-api:
+  bot-ds:
