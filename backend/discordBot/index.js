@@ -18,54 +18,25 @@ const handlerReqireCommand = (carpeta, arg, message)=>{
   }
 
 }
-const donationsRankingTask = async () => {
-    const channelId = '1326100799800999939'; // Reemplaza con el ID del canal
-    const messageId = '1326102556979499074'; // Reemplaza con el ID del mensaje
-
-    try {
-        // Obtener el canal
-        const channel = await client.channels.fetch(channelId);
-
-        // Verificar si el canal existe y es de texto
+const findAndEditMessageText = async (idChannel, idMessage, data='') => {
+    try{
+        const channel = await client.channels.fetch(idChannel);
         if (channel && channel.isTextBased()) {
             // Obtener el mensaje
-            const message = await channel.messages.fetch(messageId);
+            const message = await channel.messages.fetch(idMessage);
+
             if (!message) {
                 console.log('El mensaje no existe o ya fue eliminado.');
                 return;
             }
-            const URL = `http://${process.env.APIHOST}:${process.env.APIPORT}/members`
-            console.log(URL)
-            const response = await axios.get(URL);
-            if (response.status !== 200 || !response.data) {
-                throw new Error('Respuesta inválida de la API');
-            }
-            
-
-            const members = response.data.members;
-
-            // Ordenar los miembros por 'accumulatedDonations' en orden descendente
-            const sortedMembers = Object.values(members).sort((a, b) => b.accumulatedDonations - a.accumulatedDonations);
-            
-            // Construir el mensaje con hora y dia 
-            let newMessage = `   ≫ ───────≪•◦Última actualización: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} ◦•≫ ─────── ≪\n`;
-            newMessage += '**                               ≫ Ranking de donaciones del clan ≪:**\n';
-            let i = 1;
-            for (const member of sortedMembers) {
-                if (member.accumulatedDonations === 0) break;
-                newMessage += `•◦ ${i} •◦ ★ ${member.username}  Donaciones: ${member.accumulatedDonations}\n`;
-                i++;
-            }
-            newMessage += '   ≫ ─────── ≪•◦ ❈ ◦•≫ ─────── ≪'
-            
-            // Editar el mensaje con la hora actual
-            await message.edit(newMessage);
-            
+            await message.edit(data);
             console.log('Mensaje editado correctamente.');
+            return true;
         } else {
             console.log('El canal no es válido o no es de texto.');
+            return;
         }
-    } catch (err) {
+    }catch (err) {
         console.error('Error al editar el mensaje:', err);
 
         if (err.code === 50001) {
@@ -76,19 +47,97 @@ const donationsRankingTask = async () => {
             console.log('Error desconocido:', err);
         }
     }
-};
+}
 
-const intervalTask = () => {
-    
-    const idClan = '842217117151264778'
-    const idChannel = '842217117151264780'
-    const idMessage='1325979566690533428'
 
-    const channel = client.channels.cache.get(idChannel); 
-    if (channel) {
-        channel.send('¡Este es un mensaje programado cada 2 minutos!');
+const donationsRankingTask = async () => {
+    const channelIdRankingDonate = '1326100799800999939'; // Reemplaza con el ID del canal
+    const messageIdRankingDonate = '1326102556979499074'; // Reemplaza con el ID del mensaje
+    const channelIdLogsDonate='1326428017257353216'
+    const messageIdLogsDonate='1326428211311284245'
+
+    try {
+                
+        const URL = `http://${process.env.APIHOST}:${process.env.APIPORT}/members`
+        console.log(URL)
+        let response;
+        try {
+            response = await axios.get(URL);
+            if (response.status !== 200 || !response.data) {
+                throw new Error('Respuesta inválida de la API');
+            }
+        } catch (err) {
+            console.error('Error al obtener los miembros del clan de la api:', err);
+            return;
+        }
+        // member is object or dictionary
+        const members = response.data.members;
+        // doantionLogs is a list or array
+        const donationLogs = response.data.donationLogs;
+        const MAX_LOGS = 10;
+
+        // Verifica si el array supera el límite
+        if (donationLogs.length > MAX_LOGS) {
+          // Elimina los elementos más antiguos (los primeros)
+          donationLogs.splice(-1 * (donationLogs.length - MAX_LOGS));
+        }
+        
+
+        let logStr = `   ≫ ───────≪•◦Última actualización: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} UTC ◦•≫ ─────── ≪\n`;
+        logStr += '**                 ≫ Registro de las ultimas donaciones del clan ≪:**\n';
+        let i2 = 1;
+        for (const log of donationLogs.reverse()) {
+            logStr += `≫ ───────≪•◦ Registro N°${i2} •◦≫ ───────≪  \n`;
+            for (const memberLog of log.members) {
+                let name = members[memberLog.id].username;
+                logStr += `★ '${name}' `;
+                let y = false;
+                if (memberLog.donationsLog === 1) {
+                    logStr += `donó ${memberLog.donationsLog} tropa.`;
+                    y = true;
+                } else if (memberLog.donationsLog > 1) {
+                    logStr += `donó ${memberLog.donationsLog} tropas.`;
+                    y = true;
+                }
+                if (y && memberLog.requestsLog > 0) {
+                    logStr += 'y'
+                }
+                if (memberLog.requestsLog === 1) {
+                    logStr += ` recibió ${memberLog.requestsLog} tropa.`;
+                } else if (memberLog.requestsLog > 1) {
+                    logStr += ` recibió ${memberLog.requestsLog} tropas.`;
+                }
+                logStr += '\n';
+            }
+            i2++;
+        }
+
+
+        // Ordenar los miembros por 'accumulatedDonations' en orden descendente
+        const sortedMembers = Object.values(members).sort((a, b) => b.accumulatedDonations - a.accumulatedDonations);
+        // Construir el mensaje con hora y dia 
+        let newMessage = `   ≫ ───────≪•◦Última actualización: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} UTC ◦•≫ ─────── ≪\n`;
+        newMessage += '**                               ≫ Ranking de donaciones del clan ≪:**\n';
+        let i = 1;
+        for (const member of sortedMembers) {
+            if (member.accumulatedDonations === 0) break;
+            newMessage += `•◦ ${i} •◦ ★ ${member.username}  Donaciones: ${member.accumulatedDonations}\n`;
+            i++;
+        }
+        newMessage += '   ≫ ─────── ≪•◦ ❈ ◦•≫ ─────── ≪'
+        
+        await findAndEditMessageText(channelIdRankingDonate, messageIdRankingDonate, newMessage);
+        await findAndEditMessageText(channelIdLogsDonate, messageIdLogsDonate, logStr);
+        
+
+    } catch (err) {
+        console.error('Error al editar el mensaje:', err);
+
+       
     }
 };
+
+
 const audioTask2 = async () => {
     console.log('Esta tarea se ejecuta cada x tiempo.');
 
@@ -144,8 +193,8 @@ client.on('ready', () => {
         donationsRankingTask(); // Ejecuta la función después del retraso
 
         // Programa la ejecución repetitiva cada 2 minutos (120,000 ms)
-        setInterval(donationsRankingTask, 1000 * 60 * 2);
-    }, 10000); // 10,000 ms = 10 segundos
+        setInterval(donationsRankingTask, 1000 * 60 * 1,5);
+    }, 4000); // 10,000 ms = 10 segundos
 
     /* setInterval(audioTask2, 1000*60*1); */
 
