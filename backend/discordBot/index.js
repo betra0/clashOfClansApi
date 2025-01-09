@@ -82,9 +82,7 @@ const donationsRankingTask = async () => {
           donationLogs.splice(-1 * (donationLogs.length - MAX_LOGS));
         }
         
-
-        let logStr = `   ≫ ───────≪•◦Última actualización: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} UTC ◦•≫ ─────── ≪\n`;
-        logStr += '**                 ≫ Registro de las ultimas donaciones del clan ≪:**\n';
+        let logStr = '';
         let i2 = 1;
         for (const log of donationLogs.reverse()) {
             logStr += `≫ ───────≪•◦ Registro N°${i2} •◦≫ ───────≪  \n`;
@@ -111,7 +109,13 @@ const donationsRankingTask = async () => {
             }
             i2++;
         }
+        if (logStr.length > 1700) {
+            logStr = logStr.slice(-1700); // Mantener los últimos 2000 caracteres
+          }
+        logStr = `**                 ≫ Registro de las ultimas donaciones del clan ≪:**\n${logStr}`;
 
+        logStr = `   ≫ ───────≪•◦Última actualización: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} UTC ◦•≫ ─────── ≪\n${logStr}`;
+        
 
         // Ordenar los miembros por 'accumulatedDonations' en orden descendente
         const sortedMembers = Object.values(members).sort((a, b) => b.accumulatedDonations - a.accumulatedDonations);
@@ -126,6 +130,9 @@ const donationsRankingTask = async () => {
         }
         newMessage += '   ≫ ─────── ≪•◦ ❈ ◦•≫ ─────── ≪'
         
+        if (newMessage.length > 2000) {
+            newMessage = newMessage.slice(-1999); // Mantener los últimos 2000 caracteres
+          }
         await findAndEditMessageText(channelIdRankingDonate, messageIdRankingDonate, newMessage);
         await findAndEditMessageText(channelIdLogsDonate, messageIdLogsDonate, logStr);
         
