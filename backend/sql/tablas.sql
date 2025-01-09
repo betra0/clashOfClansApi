@@ -1,5 +1,6 @@
 
 
+
 DROP TABLE IF EXISTS `warAttacks`;
 DROP TABLE IF EXISTS `warMembers`;
 DROP TABLE IF EXISTS `war`;
@@ -48,6 +49,29 @@ CREATE TABLE playersInClans (
     PRIMARY KEY (player_id, clan_tag),
     FOREIGN KEY (player_id) REFERENCES players(player_id) ON DELETE CASCADE,
     FOREIGN KEY (clan_tag) REFERENCES clans(clan_tag) ON DELETE CASCADE
+);
+/* crear una tabla que lleve el registro de donaciones y pedidas capturadas de un member del clan en momento especifico */
+CREATE TABLE clan_donation_logs (
+    clan_tag VARCHAR(15) NOT NULL,       -- Clan Identifier (Tag)
+    donations INT DEFAULT 0,            -- Troops Donated
+    requests INT DEFAULT 0,             -- Troops Requested
+    log_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL, -- Log Timestamp
+    PRIMARY KEY (clan_tag, log_date),
+    FOREIGN KEY (clan_tag) REFERENCES clans(clan_tag) ON DELETE CASCADE
+);
+
+CREATE TABLE member_donation_logs
+(
+    clan_tag VARCHAR(15) NOT NULL,          -- Clan Identifier (Tag)
+    player_id VARCHAR(12) NOT NULL,        -- Member Identifier (Tag)
+    donations INT DEFAULT 0,                -- Troops Donated by the Member
+    requests INT DEFAULT 0,                 -- Troops Requested by the Member
+    log_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Log Timestamp
+    PRIMARY KEY (player_id, log_date),     -- Composite Primary Key
+    FOREIGN KEY (clan_tag) REFERENCES clans(clan_tag) ON DELETE CASCADE,
+    FOREIGN KEY (player_id) REFERENCES players(player_id) ON DELETE CASCADE,
+    FOREIGN KEY (clan_tag, log_date) REFERENCES clan_donation_logs(clan_tag, log_date) ON DELETE CASCADE
+
 );
 
 CREATE TABLE raids (

@@ -52,14 +52,18 @@ def Clan():
 
 @RaizBlueprint.route('/members', methods=['GET'])
 def MembersEndpoint():
-    members:Members = memberClans.get_members()
+    data = memberClans.get_members(refreshDb=True)
+    members:Members = data['members']
+    donationLogs = [logs.getdict() for logs in data['donationLogs']]
 
     return jsonify({'members': members.getdict(notNull=True), 
-                    'lenMembers':len(members.members) }), 200
+                    'lenMembers':len(members.members),
+                     'donationLogs':donationLogs }), 200
 
 @RaizBlueprint.route('/raids', methods=['GET'])
 def Raids():
-    mymembers = memberClans.get_members()
+    data = memberClans.get_members()
+    mymembers:Members = data['members']
     mymembers = memberClans.getRaids(mymembers, AmountRaids=3)
 
     

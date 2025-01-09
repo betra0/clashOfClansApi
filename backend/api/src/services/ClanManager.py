@@ -9,11 +9,13 @@ from models.entities.warOfClans import WarOfClans
 from models.entities.warAttack import WarAttack
 from models.warClansModels import ModelWarOfClans
 from models.entities.raid import Raid
-from models.entities.member import Member, RaidMember
+from models.entities.member import Member, RaidMember, DonationLogMember
+from models.entities.donationLog import DonationLog
 import json
 import os
 from models.raidModel import ModelRaid
 import logging
+from datetime import datetime
 
 logging.basicConfig(level=logging.INFO)
 
@@ -38,7 +40,14 @@ class MemberManager:
 
         if refreshDb is not True:
             if refreshDb is False or (refreshDb is None and elapsed_time is not None and elapsed_time < 15):
-                return dbMembers
+
+                try:
+                    donationLogs = ModelMember.getDonationLogs(ofset=0, limit=30)
+                    return{ 'members': dbMembers, 'donationLogs': donationLogs }
+
+                except Exception as e:
+                    print(f"Error al extraer los donationLogs: {e}")
+                    raise e
 
         
         headers = {
@@ -55,6 +64,7 @@ class MemberManager:
         memberInDB: Member
         difDonations:int = 0
         difPedidas:int = 0
+        posibleDonationLogMebers=set()
         for item in apiMembersList:
             nMember = Member(
                 id=item["tag"],
@@ -78,11 +88,22 @@ class MemberManager:
                     difPedidas = 0
                 nMember.accumulatedDonations = difDonations + memberInDB.accumulatedDonations
                 nMember.accumulatedTroopsRequested = difPedidas + memberInDB.accumulatedTroopsRequested
+                if difDonations > 0 or difPedidas:
+                    #agregar EL miembro con su diferencia de donaciones y pedidos a un set 
+                    #para luego agregarlo al donationLog
+                    posibleDonationLogMebers.add(DonationLogMember(
+                        id=nMember.id,
+                        username=nMember.username,
+                        donationsLog=difDonations,
+                        requestsLog=difPedidas,
+                    ))
             else:
                 nMember.accumulatedDonations = nMember.donations
                 nMember.accumulatedTroopsRequested = nMember.troops_requested
             apiMembersObject.add_member(nMember)
-
+        #si hay miembros en el set posibleDonationLogMebers
+        
+            
 
 
         newMembers = Members()  # Crear un nuevo objeto Members
@@ -94,26 +115,45 @@ class MemberManager:
         memberActualizar.members = apiMembersObject.members - newMembers.members
         
 
-        print('\n\n\n', 'newMembers:', '\n\n\n', len(newMembers.members), '\n\n\n')
-        print('\n\n\n', 'deleteMembers:', '\n\n\n', len(deleteMembers.members), '\n\n\n')
-        print('\n\n\n', 'actuales a Actualizar:', '\n\n\n', len(memberActualizar.members), '\n\n\n')
+        print('\n\n', 'newMembers:', '\n\n', len(newMembers.members), '\n\n')
+        print('\n\n', 'deleteMembers:', '\n\n', len(deleteMembers.members), '\n\n')
+        print('\n\n', 'actuales a Actualizar:', '\n\n', len(memberActualizar.members), '\n\n')
 
         try:
             ModelMember.refreshMembers(deleteMembers, newMembers, memberActualizar)
         except Exception as e:
             print(f"Error al actualizar los miembros en la db: {e}")
             raise e
+        
+        try:
+            if len(posibleDonationLogMebers) > 0:
+                #PONER EL TIME NOW
+                newDonationLog = DonationLog(
+                    clan_tag=f'#{Config.ClanId}',
+                    logDate=datetime.now(),
+                )
+                newDonationLog.members = posibleDonationLogMebers
+                ModelMember.insertDonationLog(donationLog=newDonationLog)
 
+        
+        except Exception as e:
+            print(f"Error al crear el donationLog: {e}")
+            raise e
+        actualMembers=None
         try:
             self.last_called = now
             if not onlyRefresk:
                 actualMembers = ModelMember.getAllMembers()
-                
-            
-                return actualMembers
         except Exception as e:
             print(f"Error al extraer los miembros actualizados: {e}")
             raise e
+        try:
+            donationLogs = ModelMember.getDonationLogs(ofset=0, limit=30)
+        except Exception as e:
+            print(f"Error al extraer los donationLogs: {e}")
+            raise e
+        return { 'members': actualMembers, 'donationLogs': donationLogs }
+    
 
     def getRaids(self, members:Members, AmountRaids=3,):
         
@@ -127,7 +167,8 @@ class MemberManager:
         return members
 
     def getAllClanInfo(self, AmountWars=3, AmountRaids=3, refreshDb=None):
-        memberOfClans = self.get_members(refreshDb=refreshDb)
+        data = self.get_members(refreshDb=refreshDb)
+        memberOfClans:Members = data['members']
         memberOfClans = self.getRaids(memberOfClans, AmountRaids=AmountRaids)
         memberOfClans= self.getwars(members=memberOfClans, AmountWars=AmountWars)
 

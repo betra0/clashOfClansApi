@@ -179,5 +179,29 @@ class WarMember(Member):
 
         return data
 
-    
+class DonationLogMember(Member): 
+    def __init__(self, 
+                 id=None, 
+                 username=None, 
+                 donationsLog=None, 
+                 requestsLog=None, 
+                 **kwargs):
+        # Pasar el ID al constructor de la clase padre
+        super().__init__(id=id, username=username, **kwargs)
+        
+        self.donationsLog = donationsLog
+        self.requestsLog = requestsLog
+
+    def getdict(self, notNull=False):
+        data = {
+            'id': self.id,
+            'username': self.username,
+            'donationsLog': self.donationsLog,
+            'requestsLog': self.requestsLog
+        }
+
+        if notNull:
+            data = {key: value for key, value in data.items() if value is not None}
+
+        return data
 
