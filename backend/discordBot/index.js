@@ -1,6 +1,7 @@
-const {Client, Events, MessageActivityType} = require('discord.js');
+const {Client, Events, ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder, Embed} = require('discord.js');
 const axios = require('axios');
-
+const findAndEditMessageText = require('./services/findAndEditMessageText');
+const generateRegister = require('./other/generateRegister');
 
 require('dotenv').config({ path: '../../.env' });
 
@@ -17,36 +18,6 @@ const handlerReqireCommand = (carpeta, arg, message)=>{
     console.log(e)
   }
 
-}
-const findAndEditMessageText = async (idChannel, idMessage, data='') => {
-    try{
-        const channel = await client.channels.fetch(idChannel);
-        if (channel && channel.isTextBased()) {
-            // Obtener el mensaje
-            const message = await channel.messages.fetch(idMessage);
-
-            if (!message) {
-                console.log('El mensaje no existe o ya fue eliminado.');
-                return;
-            }
-            await message.edit(data);
-            console.log('Mensaje editado correctamente.');
-            return true;
-        } else {
-            console.log('El canal no es válido o no es de texto.');
-            return;
-        }
-    }catch (err) {
-        console.error('Error al editar el mensaje:', err);
-
-        if (err.code === 50001) {
-            console.log('El bot no tiene permisos para ver los mensajes en este canal.');
-        } else if (err.code === 10008) {
-            console.log('El mensaje no existe o ya fue eliminado.');
-        } else {
-            console.log('Error desconocido:', err);
-        }
-    }
 }
 
 
@@ -74,47 +45,6 @@ const donationsRankingTask = async () => {
         const members = response.data.members;
         // doantionLogs is a list or array
         const donationLogs = response.data.donationLogs;
-        const MAX_LOGS = 10;
-
-        // Verifica si el array supera el límite
-        if (donationLogs.length > MAX_LOGS) {
-          // Elimina los elementos más antiguos (los primeros)
-          donationLogs.splice(-1 * (donationLogs.length - MAX_LOGS));
-        }
-        
-        let logStr = '';
-        let i2 = 1;
-        for (const log of donationLogs.reverse()) {
-            logStr += `≫ ───────≪•◦ Registro N°${i2} •◦≫ ───────≪  \n`;
-            for (const memberLog of log.members) {
-                let name = members[memberLog.id].username;
-                logStr += `★ '${name}' `;
-                let y = false;
-                if (memberLog.donationsLog === 1) {
-                    logStr += `donó ${memberLog.donationsLog} tropa.`;
-                    y = true;
-                } else if (memberLog.donationsLog > 1) {
-                    logStr += `donó ${memberLog.donationsLog} tropas.`;
-                    y = true;
-                }
-                if (y && memberLog.requestsLog > 0) {
-                    logStr += 'y'
-                }
-                if (memberLog.requestsLog === 1) {
-                    logStr += ` recibió ${memberLog.requestsLog} tropa.`;
-                } else if (memberLog.requestsLog > 1) {
-                    logStr += ` recibió ${memberLog.requestsLog} tropas.`;
-                }
-                logStr += '\n';
-            }
-            i2++;
-        }
-        if (logStr.length > 1700) {
-            logStr = logStr.slice(-1700); // Mantener los últimos 2000 caracteres
-          }
-        logStr = `**                 ≫ Registro de las ultimas donaciones del clan ≪:**\n${logStr}`;
-
-        logStr = `   ≫ ───────≪•◦Última actualización: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} UTC ◦•≫ ─────── ≪\n${logStr}`;
         
 
         // Ordenar los miembros por 'accumulatedDonations' en orden descendente
@@ -133,14 +63,14 @@ const donationsRankingTask = async () => {
         if (newMessage.length > 2000) {
             newMessage = newMessage.slice(-1999); // Mantener los últimos 2000 caracteres
           }
-        await findAndEditMessageText(channelIdRankingDonate, messageIdRankingDonate, newMessage);
-        await findAndEditMessageText(channelIdLogsDonate, messageIdLogsDonate, logStr);
+        await findAndEditMessageText(client, channelIdRankingDonate, messageIdRankingDonate, newMessage);
+
+        const embeds = generateEmbedsLogs({membersDict: members, logsDonationList: donationLogs})
+        await findAndEditMessageText(client, channelIdLogsDonate, messageIdLogsDonate, {content: '' ,embeds: embeds});
         
 
     } catch (err) {
-        console.error('Error al editar el mensaje:', err);
-
-       
+        console.error('Error al editar el mensaje:', err); 
     }
 };
 
@@ -189,8 +119,73 @@ const audioTask2 = async () => {
     }
 };
 
+const generateEmbedsLogs = ({membersDict={}, logsDonationList={}})=>{
+    const MAX_LOGS = 9;
+    if (!membersDict || !logsDonationList) throw new Error('No se han proporcionado los datos necesarios.');
+    const donationLogs = [...logsDonationList];
+    // Verifica si el array supera el límite
+    if (donationLogs.length > MAX_LOGS) {
+      // Elimina los elementos más antiguos (los primeros)
+      donationLogs.splice(-1 * (donationLogs.length - MAX_LOGS));
+    }
+    let embeds = []
+    const TitleEmbed = new EmbedBuilder()
+        .setColor('#0099ff')
+        .setTitle(`≫ ───────≪•◦Registro donaciones del clan•◦≫ ───────≪`)
+        .setDescription('Este es el registro de las ultimas donaciones del clan')
+        .setTimestamp()
+    embeds.push(TitleEmbed)
+
+    let n=1
+    for (const log of donationLogs.reverse()){
+        let embed=generateRegister({ members:membersDict, NRegistro: n, logMembers: log.members });
+        if (embed)
+            embeds.push(embed)
+            n++
+
+    }
+    return embeds
+}
 
 
+const exampleTask = async () => {
+    const channelIdLogsDonate='1325969560372903999'
+    const messageIdLogsDonate='1326973197417189397'
+    const URL = `http://${process.env.APIHOST}:${process.env.APIPORT}/members`
+        console.log(URL)
+        let response;
+        try {
+            response = await axios.get(URL);
+            if (response.status !== 200 || !response.data) {
+                throw new Error('Respuesta inválida de la API');
+            }
+        } catch (err) {
+            console.error('Error al obtener los miembros del clan de la api:', err);
+            return;
+        }
+
+    const members = response.data.members;
+    // doantionLogs is a list or array
+    const donationLogs = response.data.donationLogs;
+    const embeds = generateEmbedsLogs({membersDict: members, logsDonationList: donationLogs})
+    await findAndEditMessageText(client, channelIdLogsDonate, messageIdLogsDonate, {content: '' ,embeds: embeds});
+/*     const targetChannelId = '1327107443666452563'; 
+    const channel = client.channels.cache.get(targetChannelId);
+
+        if (channel) {
+            // Envía un mensaje al canal
+            channel.send({
+              content: '',
+              embeds: embeds,  
+            
+            });
+        } else {
+            console.log('Canal no encontrado.');
+        } */
+
+
+
+}
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}`);
@@ -201,9 +196,19 @@ client.on('ready', () => {
 
         // Programa la ejecución repetitiva cada 2 minutos (120,000 ms)
         setInterval(donationsRankingTask, 1000 * 60 * 1,5);
-    }, 4000); // 10,000 ms = 10 segundos
+    }, 4000); 
+      // Revisa si ya existe una iteración activa
+    
 
-    /* setInterval(audioTask2, 1000*60*1); */
+        
+        
+
+        /* setTimeout(() => {
+            exampleTask(); // Ejecuta la función después del retraso
+            
+        }, 1000)
+         */
+
 
 });
 
