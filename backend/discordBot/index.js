@@ -1,5 +1,7 @@
-const {Client, Events, ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder, Embed} = require('discord.js');
+const {Client, Events, ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder, Embed, InteractionFlags } = require('discord.js');
 const axios = require('axios');
+const fs = require('fs');
+const path = require('path');
 const findAndEditMessageText = require('./services/findAndEditMessageText');
 const generateRegister = require('./other/generateRegister');
 
@@ -75,49 +77,6 @@ const donationsRankingTask = async () => {
 };
 
 
-const audioTask2 = async () => {
-    console.log('Esta tarea se ejecuta cada x tiempo.');
-
-    const idVoiceChannel = '842217117393747988'; // ID del canal de voz
-
-    try {
-        const voiceChannel = client.channels.cache.get(idVoiceChannel);
-        if (!voiceChannel) throw new Error('El canal de voz no existe o no es válido.');
-
-        const newName = `Actualizado: ${new Date().toLocaleTimeString()}`;
-        const updatedChannel = await voiceChannel.setName(newName, { reason: 'Actualización automática' });
-
-        if (updatedChannel) {
-            console.log(`Nombre cambiado a: ${updatedChannel.name}`);
-        }
-
-        // Obtener información de límite de tasa
-        const headers = updatedChannel?.rateLimitPerUser || updatedChannel?.lastMessage?.rateLimitHeaders;
-
-        if (headers) {
-            console.log(`Límite: ${headers['x-ratelimit-limit']}`);
-            console.log(`Restantes: ${headers['x-ratelimit-remaining']}`);
-            console.log(`Se reinicia en: ${new Date(headers['x-ratelimit-reset'] * 1000)}`);
-            console.log(`Tiempo hasta el reinicio: ${headers['x-ratelimit-reset-after']} segundos`);
-        }
-
-    } catch (err) {
-        console.error('Ocurrió un error al cambiar el nombre del canal:', err);
-
-        // Errores específicos
-        if (err.code === 50013) {
-            console.log('El bot no tiene permisos para cambiar el nombre del canal.');
-        } else if (err.code === 10003) {
-            console.log('El canal no existe o ha sido eliminado.');
-        } else if (err.response && err.response.status === 429) {
-            // Manejo específico para rate limit excedido
-            const retryAfter = err.response.data.retry_after;
-            console.log(`Excediste el límite de tasa. Espera ${retryAfter} segundos antes de intentar nuevamente.`);
-        } else {
-            console.log('Error desconocido:', err);
-        }
-    }
-};
 
 const generateEmbedsLogs = ({membersDict={}, logsDonationList={}})=>{
     const MAX_LOGS = 9;
@@ -149,39 +108,35 @@ const generateEmbedsLogs = ({membersDict={}, logsDonationList={}})=>{
 
 
 const exampleTask = async () => {
-    const channelIdLogsDonate='1325969560372903999'
-    const messageIdLogsDonate='1326973197417189397'
-    const URL = `http://${process.env.APIHOST}:${process.env.APIPORT}/members`
-        console.log(URL)
-        let response;
-        try {
-            response = await axios.get(URL);
-            if (response.status !== 200 || !response.data) {
-                throw new Error('Respuesta inválida de la API');
-            }
-        } catch (err) {
-            console.error('Error al obtener los miembros del clan de la api:', err);
-            return;
-        }
+    const boton = new ButtonBuilder()
+        .setCustomId('sendReportTomateTeam')  // Identificador único para el botón
+        .setLabel('Presionar aquí')  // Etiqueta del botón
+        .setStyle(ButtonStyle.Primary);  // Estilo del botón (puede ser 'Primary', 'Secondary', etc.)
 
-    const members = response.data.members;
-    // doantionLogs is a list or array
-    const donationLogs = response.data.donationLogs;
-    const embeds = generateEmbedsLogs({membersDict: members, logsDonationList: donationLogs})
-    await findAndEditMessageText(client, channelIdLogsDonate, messageIdLogsDonate, {content: '' ,embeds: embeds});
-/*     const targetChannelId = '1327107443666452563'; 
+    // Crear una fila de acción que contenga el botón
+    const fila = new ActionRowBuilder().addComponents(boton);
+
+    // Enviar el mensaje con el botón
+
+   
+ const targetChannelId = '1327408280217059444'; 
     const channel = client.channels.cache.get(targetChannelId);
 
         if (channel) {
             // Envía un mensaje al canal
+            const embed = new EmbedBuilder()
+                .setColor('#0099ff')
+                .setTitle('Reporte del Clan')
+                .setDescription('Presiona el botón para obtener el reporte del clan en exel.')
             channel.send({
               content: '',
-              embeds: embeds,  
+                embeds: [embed],
+               components: [fila],
             
             });
         } else {
             console.log('Canal no encontrado.');
-        } */
+        }
 
 
 
@@ -192,22 +147,22 @@ client.on('ready', () => {
 
     // Espera 10 segundos antes de ejecutar por primera vez
     setTimeout(() => {
-        donationsRankingTask(); // Ejecuta la función después del retraso
+        donationsRankingTask(); 
 
         // Programa la ejecución repetitiva cada 2 minutos (120,000 ms)
         setInterval(donationsRankingTask, 1000 * 60 * 1,5);
     }, 4000); 
-      // Revisa si ya existe una iteración activa
+   
     
 
         
         
 
         /* setTimeout(() => {
-            exampleTask(); // Ejecuta la función después del retraso
+            exampleTask(); 
             
-        }, 1000)
-         */
+        }, 1000) */
+        
 
 
 });
@@ -249,6 +204,54 @@ client.on(Events.MessageCreate, async message => {
     
     
 
+});
+
+
+client.on('interactionCreate', async (interaction) => {
+    if (!interaction.isButton()) return;  // Asegúrate de que la interacción sea un botón
+
+    if (interaction.customId === 'sendReportTomateTeam') {
+        try {
+            // Hacer la solicitud GET para obtener el archivo desde tu API
+            const url = `http://${process.env.APIHOST}:${process.env.APIPORT}/report`;
+            const response = await axios.get(url, {
+                responseType: 'arraybuffer', // Esto es importante para obtener el archivo binario
+            });
+
+            // Crear un archivo temporal en el sistema con el contenido del archivo recibido
+            const filePath = path.join(__dirname, 'reporte_generado.xlsx');
+            fs.writeFileSync(filePath, response.data); // Guardar el archivo recibido
+
+            // Enviar el archivo al canal
+            const embed = new EmbedBuilder()
+                .setColor('#0099ff')
+                .setTitle('Reporte del Clan')
+                .setDescription(`Se ha generado un reporte para ${interaction.user.username}.`)
+                .setTimestamp();
+            const mensajeReply = await interaction.reply({
+                content: ``,
+                files: [{ attachment: filePath, name: 'ReporteTomateTeam.xlsx' }],
+                embeds: [embed],
+                flags: 64
+            });
+
+
+            // Opcional: Eliminar el archivo temporal después de enviarlo
+            fs.unlinkSync(filePath);
+            setTimeout(() => {
+                mensajeReply.delete().catch(console.error);  // Eliminar el mensaje
+            }, 60000);
+            
+
+        } catch (error) {
+            console.error('Error al obtener el reporte:', error);
+            await interaction.reply({
+                content: 'Hubo un error al generar el reporte. Intenta de nuevo más tarde.',
+                flags: 64
+            });
+        }
+
+    }
 });
 
 client.login(token); 
