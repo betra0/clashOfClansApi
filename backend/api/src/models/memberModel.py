@@ -164,24 +164,20 @@ class ModelMember():
                         newMember.defense_count,
                         newMember.status
                     ))
-                    sql = f"""
-                        INSERT INTO playersInClans (
+                    sql = """
+                        INSERT IGNORE INTO playersInClans (
                             player_id, 
                             clan_tag,
                             accumulatedDonations,
                             accumulatedTroopsRequested
                         )
-                        VALUES (%s, %s, %s, %s)
-                        ON DUPLICATE KEY UPDATE
-                            accumulatedDonations = VALUES(accumulatedDonations),
-                            accumulatedTroopsRequested = VALUES(accumulatedTroopsRequested);
-                        """
+                        VALUES (%s, %s, %s, %s);
+                    """
                     cursor.execute(sql, (
                         newMember.id,
                         newMember.clan_tag,
                         newMember.accumulatedDonations,
                         newMember.accumulatedTroopsRequested,
-                        
                     ))
                 connection.commit()
             # Actualizar miembros existentes
