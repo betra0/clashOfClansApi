@@ -7,7 +7,7 @@ function generateRegister({ members, NRegistro = 0, logMembers }) {
     for (const memberLog of logMembers) {
         // Puedes definir la lógica para 'donó' y 'recibió' si tienes información relevante
 
-        let name = `'${members[memberLog.id].username}' : `;
+        let name = `'${members[memberLog.id]?.username || "Unknown"}' : `;
         let dono = '0 Tropas'; 
         let recibio = '0 Tropas';
         let titleDono = 'Donó';
