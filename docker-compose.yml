@@ -32,8 +32,6 @@ services:
   discord-bot:
     build:
       context: ./backend/discordBot
-      dockerfile: Dockerfile        # Asegúrate de tener un Dockerfile configurado en esa carpeta
-    container_name: discord-bot
     restart: always               # El contenedor se reinicia siempre que se detenga
     environment:
       - BOTDSTOKEN=${BOTDSTOKEN}   # Token del bot
